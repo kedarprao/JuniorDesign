@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEA574422081037B00662510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574412081037B00662510 /* AppDelegate.swift */; };
+		BEA574442081037B00662510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574432081037B00662510 /* ViewController.swift */; };
+		BEA574472081037B00662510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA574452081037B00662510 /* Main.storyboard */; };
+		BEA574492081037D00662510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA574482081037D00662510 /* Images.xcassets */; };
+		BEA5744C2081037D00662510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA5744A2081037D00662510 /* LaunchScreen.storyboard */; };
+		BEA574572081037D00662510 /* SmoothiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574562081037D00662510 /* SmoothiesTests.swift */; };
+		BEA574622081037D00662510 /* SmoothiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574612081037D00662510 /* SmoothiesUITests.swift */; };
+		BEA574702081257100662510 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5746F2081257100662510 /* Register.swift */; };
+		BEA574782081284B00662510 /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574772081284B00662510 /* Google.swift */; };
+		BEA5747A20812B3B00662510 /* AppPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747920812B3B00662510 /* AppPage1.swift */; };
+		BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747B20812D8000662510 /* WeightGoals.swift */; };
+		BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747D20812ED800662510 /* FavoriteFruits.swift */; };
+		BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747F2081312900662510 /* DietaryRestrictions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEA574532081037D00662510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA574362081037B00662510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA5743D2081037B00662510;
+			remoteInfo = Smoothies;
+		};
+		BEA5745E2081037D00662510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA574362081037B00662510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA5743D2081037B00662510;
+			remoteInfo = Smoothies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEA5743E2081037B00662510 /* Smoothies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoothies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA574412081037B00662510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEA574432081037B00662510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEA574462081037B00662510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEA574482081037D00662510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEA5744B2081037D00662510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEA5744D2081037D00662510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA574522081037D00662510 /* SmoothiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoothiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA574562081037D00662510 /* SmoothiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesTests.swift; sourceTree = "<group>"; };
+		BEA574582081037D00662510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA5745D2081037D00662510 /* SmoothiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoothiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA574612081037D00662510 /* SmoothiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesUITests.swift; sourceTree = "<group>"; };
+		BEA574632081037D00662510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA5746F2081257100662510 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		BEA574772081284B00662510 /* Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
+		BEA5747920812B3B00662510 /* AppPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPage1.swift; sourceTree = "<group>"; };
+		BEA5747B20812D8000662510 /* WeightGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoals.swift; sourceTree = "<group>"; };
+		BEA5747D20812ED800662510 /* FavoriteFruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFruits.swift; sourceTree = "<group>"; };
+		BEA5747F2081312900662510 /* DietaryRestrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRestrictions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEA5743B2081037B00662510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA5744F2081037D00662510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA5745A2081037D00662510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEA574352081037B00662510 = {
+			isa = PBXGroup;
+			children = (
+				BEA574402081037B00662510 /* Smoothies */,
+				BEA574552081037D00662510 /* SmoothiesTests */,
+				BEA574602081037D00662510 /* SmoothiesUITests */,
+				BEA5743F2081037B00662510 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEA5743F2081037B00662510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEA5743E2081037B00662510 /* Smoothies.app */,
+				BEA574522081037D00662510 /* SmoothiesTests.xctest */,
+				BEA5745D2081037D00662510 /* SmoothiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA574402081037B00662510 /* Smoothies */ = {
+			isa = PBXGroup;
+			children = (
+				BEA574412081037B00662510 /* AppDelegate.swift */,
+				BEA574432081037B00662510 /* ViewController.swift */,
+				BEA574452081037B00662510 /* Main.storyboard */,
+				BEA5746F2081257100662510 /* Register.swift */,
+				BEA574772081284B00662510 /* Google.swift */,
+				BEA5747920812B3B00662510 /* AppPage1.swift */,
+				BEA5747D20812ED800662510 /* FavoriteFruits.swift */,
+				BEA5747F2081312900662510 /* DietaryRestrictions.swift */,
+				BEA5747B20812D8000662510 /* WeightGoals.swift */,
+				BEA574482081037D00662510 /* Images.xcassets */,
+				BEA5744A2081037D00662510 /* LaunchScreen.storyboard */,
+				BEA5744D2081037D00662510 /* Info.plist */,
+			);
+			path = Smoothies;
+			sourceTree = "<group>";
+		};
+		BEA574552081037D00662510 /* SmoothiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEA574562081037D00662510 /* SmoothiesTests.swift */,
+				BEA574582081037D00662510 /* Info.plist */,
+			);
+			path = SmoothiesTests;
+			sourceTree = "<group>";
+		};
+		BEA574602081037D00662510 /* SmoothiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEA574612081037D00662510 /* SmoothiesUITests.swift */,
+				BEA574632081037D00662510 /* Info.plist */,
+			);
+			path = SmoothiesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEA5743D2081037B00662510 /* Smoothies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA574662081037D00662510 /* Build configuration list for PBXNativeTarget "Smoothies" */;
+			buildPhases = (
+				BEA5743A2081037B00662510 /* Sources */,
+				BEA5743B2081037B00662510 /* Frameworks */,
+				BEA5743C2081037B00662510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smoothies;
+			productName = Smoothies;
+			productReference = BEA5743E2081037B00662510 /* Smoothies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEA574512081037D00662510 /* SmoothiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA574692081037D00662510 /* Build configuration list for PBXNativeTarget "SmoothiesTests" */;
+			buildPhases = (
+				BEA5744E2081037D00662510 /* Sources */,
+				BEA5744F2081037D00662510 /* Frameworks */,
+				BEA574502081037D00662510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA574542081037D00662510 /* PBXTargetDependency */,
+			);
+			name = SmoothiesTests;
+			productName = SmoothiesTests;
+			productReference = BEA574522081037D00662510 /* SmoothiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEA5745C2081037D00662510 /* SmoothiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA5746C2081037D00662510 /* Build configuration list for PBXNativeTarget "SmoothiesUITests" */;
+			buildPhases = (
+				BEA574592081037D00662510 /* Sources */,
+				BEA5745A2081037D00662510 /* Frameworks */,
+				BEA5745B2081037D00662510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA5745F2081037D00662510 /* PBXTargetDependency */,
+			);
+			name = SmoothiesUITests;
+			productName = SmoothiesUITests;
+			productReference = BEA5745D2081037D00662510 /* SmoothiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEA574362081037B00662510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Francis Wethington";
+				TargetAttributes = {
+					BEA5743D2081037B00662510 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					BEA574512081037D00662510 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = BEA5743D2081037B00662510;
+					};
+					BEA5745C2081037D00662510 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = BEA5743D2081037B00662510;
+					};
+				};
+			};
+			buildConfigurationList = BEA574392081037B00662510 /* Build configuration list for PBXProject "Smoothies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEA574352081037B00662510;
+			productRefGroup = BEA5743F2081037B00662510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEA5743D2081037B00662510 /* Smoothies */,
+				BEA574512081037D00662510 /* SmoothiesTests */,
+				BEA5745C2081037D00662510 /* SmoothiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEA5743C2081037B00662510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA5744C2081037D00662510 /* LaunchScreen.storyboard in Resources */,
+				BEA574492081037D00662510 /* Images.xcassets in Resources */,
+				BEA574472081037B00662510 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA574502081037D00662510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA5745B2081037D00662510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEA5743A2081037B00662510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */,
+				BEA5747A20812B3B00662510 /* AppPage1.swift in Sources */,
+				BEA574782081284B00662510 /* Google.swift in Sources */,
+				BEA574702081257100662510 /* Register.swift in Sources */,
+				BEA574442081037B00662510 /* ViewController.swift in Sources */,
+				BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */,
+				BEA574422081037B00662510 /* AppDelegate.swift in Sources */,
+				BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA5744E2081037D00662510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA574572081037D00662510 /* SmoothiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA574592081037D00662510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA574622081037D00662510 /* SmoothiesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEA574542081037D00662510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA5743D2081037B00662510 /* Smoothies */;
+			targetProxy = BEA574532081037D00662510 /* PBXContainerItemProxy */;
+		};
+		BEA5745F2081037D00662510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA5743D2081037B00662510 /* Smoothies */;
+			targetProxy = BEA5745E2081037D00662510 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEA574452081037B00662510 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA574462081037B00662510 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEA5744A2081037D00662510 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA5744B2081037D00662510 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEA574642081037D00662510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEA574652081037D00662510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEA574672081037D00662510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Smoothies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancisWethington.Smoothies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEA574682081037D00662510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Smoothies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancisWethington.Smoothies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEA5746A2081037D00662510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmoothiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancisWethington.SmoothiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smoothies.app/Smoothies";
+			};
+			name = Debug;
+		};
+		BEA5746B2081037D00662510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmoothiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancisWethington.SmoothiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smoothies.app/Smoothies";
+			};
+			name = Release;
+		};
+		BEA5746D2081037D00662510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmoothiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancisWethington.SmoothiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smoothies;
+			};
+			name = Debug;
+		};
+		BEA5746E2081037D00662510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmoothiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FrancisWethington.SmoothiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smoothies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEA574392081037B00662510 /* Build configuration list for PBXProject "Smoothies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA574642081037D00662510 /* Debug */,
+				BEA574652081037D00662510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA574662081037D00662510 /* Build configuration list for PBXNativeTarget "Smoothies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA574672081037D00662510 /* Debug */,
+				BEA574682081037D00662510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA574692081037D00662510 /* Build configuration list for PBXNativeTarget "SmoothiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA5746A2081037D00662510 /* Debug */,
+				BEA5746B2081037D00662510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA5746C2081037D00662510 /* Build configuration list for PBXNativeTarget "SmoothiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA5746D2081037D00662510 /* Debug */,
+				BEA5746E2081037D00662510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEA574362081037B00662510 /* Project object */;
+}
