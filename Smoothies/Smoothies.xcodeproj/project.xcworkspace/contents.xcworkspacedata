@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Smoothies.xcodeproj">
+      location = "group:/Users/kedar/Gatech/JuniorDesign/Smoothies/Smoothies/calendar.png">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "New Group">
+   </Group>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
