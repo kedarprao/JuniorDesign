@@ -21,7 +21,15 @@ class WeightGoals: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var gain: UIButton!
+    @IBOutlet weak var lose: UIButton!
+    @IBOutlet weak var maintain: UIButton!
+    @IBOutlet weak var none: UIButton!
+    
+    @IBAction func gain(_ sender: Any) {
+        gain.backgroundColor = UIColor.lightGray
+    }
+    
     /*
     // MARK: - Navigation
 

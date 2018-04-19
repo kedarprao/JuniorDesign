@@ -12,6 +12,7 @@ class DietaryRestrictions: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        lactose.backgroundColor = UIColor.white
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +22,16 @@ class DietaryRestrictions: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var lactose: UIButton!
+    
+    @IBAction func lactose(_ sender: Any) {
+        if (lactose.backgroundColor == UIColor.white) {
+            lactose.backgroundColor = UIColor.lightGray
+        } else {
+            lactose.backgroundColor = UIColor.white
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

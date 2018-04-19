@@ -1,5 +1,5 @@
 //
-//  AppPage1.swift
+//  Budget.swift
 //  Smoothies
 //
 //  Created by Francis Wethington on 4/13/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppPage1: UIViewController {
+class Budget: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

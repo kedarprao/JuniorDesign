@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97DE269C20893E0C00905863 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE269B20893E0C00905863 /* Scheduler.swift */; };
+		97DE26A4208952C400905863 /* smoothies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97DE26A3208952C300905863 /* smoothies.jpg */; };
+		97DE26A62089617000905863 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE26A52089617000905863 /* DaySchedule.swift */; };
 		BEA574422081037B00662510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574412081037B00662510 /* AppDelegate.swift */; };
 		BEA574442081037B00662510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574432081037B00662510 /* ViewController.swift */; };
 		BEA574472081037B00662510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA574452081037B00662510 /* Main.storyboard */; };
@@ -14,9 +17,7 @@
 		BEA5744C2081037D00662510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA5744A2081037D00662510 /* LaunchScreen.storyboard */; };
 		BEA574572081037D00662510 /* SmoothiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574562081037D00662510 /* SmoothiesTests.swift */; };
 		BEA574622081037D00662510 /* SmoothiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574612081037D00662510 /* SmoothiesUITests.swift */; };
-		BEA574702081257100662510 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5746F2081257100662510 /* Register.swift */; };
-		BEA574782081284B00662510 /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574772081284B00662510 /* Google.swift */; };
-		BEA5747A20812B3B00662510 /* AppPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747920812B3B00662510 /* AppPage1.swift */; };
+		BEA5747A20812B3B00662510 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747920812B3B00662510 /* Budget.swift */; };
 		BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747B20812D8000662510 /* WeightGoals.swift */; };
 		BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747D20812ED800662510 /* FavoriteFruits.swift */; };
 		BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747F2081312900662510 /* DietaryRestrictions.swift */; };
@@ -40,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97DE269B20893E0C00905863 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		97DE26A3208952C300905863 /* smoothies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smoothies.jpg; sourceTree = "<group>"; };
+		97DE26A52089617000905863 /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		97DE26A72089626C00905863 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = /Users/kedar/Gatech/JuniorDesign/Smoothies/Smoothies/calendar.png; sourceTree = "<absolute>"; };
 		BEA5743E2081037B00662510 /* Smoothies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoothies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA574412081037B00662510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEA574432081037B00662510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,9 +58,7 @@
 		BEA5745D2081037D00662510 /* SmoothiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoothiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA574612081037D00662510 /* SmoothiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothiesUITests.swift; sourceTree = "<group>"; };
 		BEA574632081037D00662510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEA5746F2081257100662510 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		BEA574772081284B00662510 /* Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
-		BEA5747920812B3B00662510 /* AppPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPage1.swift; sourceTree = "<group>"; };
+		BEA5747920812B3B00662510 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		BEA5747B20812D8000662510 /* WeightGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGoals.swift; sourceTree = "<group>"; };
 		BEA5747D20812ED800662510 /* FavoriteFruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFruits.swift; sourceTree = "<group>"; };
 		BEA5747F2081312900662510 /* DietaryRestrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRestrictions.swift; sourceTree = "<group>"; };
@@ -109,16 +112,18 @@
 		BEA574402081037B00662510 /* Smoothies */ = {
 			isa = PBXGroup;
 			children = (
+				97DE26A52089617000905863 /* DaySchedule.swift */,
+				97DE269B20893E0C00905863 /* Scheduler.swift */,
 				BEA574412081037B00662510 /* AppDelegate.swift */,
 				BEA574432081037B00662510 /* ViewController.swift */,
 				BEA574452081037B00662510 /* Main.storyboard */,
-				BEA5746F2081257100662510 /* Register.swift */,
-				BEA574772081284B00662510 /* Google.swift */,
-				BEA5747920812B3B00662510 /* AppPage1.swift */,
+				BEA5747920812B3B00662510 /* Budget.swift */,
 				BEA5747D20812ED800662510 /* FavoriteFruits.swift */,
 				BEA5747F2081312900662510 /* DietaryRestrictions.swift */,
 				BEA5747B20812D8000662510 /* WeightGoals.swift */,
+				97DE26A72089626C00905863 /* calendar.png */,
 				BEA574482081037D00662510 /* Images.xcassets */,
+				97DE26A3208952C300905863 /* smoothies.jpg */,
 				BEA5744A2081037D00662510 /* LaunchScreen.storyboard */,
 				BEA5744D2081037D00662510 /* Info.plist */,
 			);
@@ -250,6 +255,7 @@
 				BEA5744C2081037D00662510 /* LaunchScreen.storyboard in Resources */,
 				BEA574492081037D00662510 /* Images.xcassets in Resources */,
 				BEA574472081037B00662510 /* Main.storyboard in Resources */,
+				97DE26A4208952C400905863 /* smoothies.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +281,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */,
-				BEA5747A20812B3B00662510 /* AppPage1.swift in Sources */,
-				BEA574782081284B00662510 /* Google.swift in Sources */,
-				BEA574702081257100662510 /* Register.swift in Sources */,
+				97DE269C20893E0C00905863 /* Scheduler.swift in Sources */,
+				BEA5747A20812B3B00662510 /* Budget.swift in Sources */,
 				BEA574442081037B00662510 /* ViewController.swift in Sources */,
 				BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */,
 				BEA574422081037B00662510 /* AppDelegate.swift in Sources */,
 				BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */,
+				97DE26A62089617000905863 /* DaySchedule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
