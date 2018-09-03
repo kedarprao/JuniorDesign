@@ -23,7 +23,9 @@ class Recipe():
         self.ingredients = kwargs.pop('ingredients')
 
 
-
+def parse_file(filename):
+    with open(filename) as f:
+        
 
 
 
