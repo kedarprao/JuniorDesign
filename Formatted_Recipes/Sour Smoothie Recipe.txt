@@ -1,0 +1,15 @@
+Title: Sour Smoothie Recipe
+Image: https://images.media-allrecipes.com/userphotos/560x315/4518428.jpg
+Rating: 4.16666650772095
+Ingredients: 1.0 cup ice cubes,1.0 orange,2.0 limes,1.0 lemon,1.0 kiwi,1.0 teaspoon honey
+Duration: 10 m
+Directions: Blend ice, orange, limes, lemon, kiwi, and honey together in a blender until smooth
+Nutrients: 
+Servings: 2
+Calories: 105
+Fat: 0.6
+Carbohydrates: 31.4
+Protein: 2.4
+
+
+Source: https://www.allrecipes.com/recipe/235998/sour-smoothie/?internalSource=recipe%20hub&referringId=138&referringContentType=recipe%20hub&clickId=cardslot%20301

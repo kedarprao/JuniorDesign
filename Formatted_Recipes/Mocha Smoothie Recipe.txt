@@ -1,0 +1,15 @@
+Title: Mocha Smoothie Recipe
+Image: https://images.media-allrecipes.com/userphotos/560x315/1132135.jpg
+Rating: 4.46153831481934
+Ingredients: 1.0 cup crushed ice,0.75 cup coconut milk,0.25 cup brewed coffee,3.0 tablespoons turbinado sugar (such as Sugar in the Raw®),1.0 tablespoon hot chocolate mix (such as Starbucks®),1.0 tablespoon vanilla extract
+Duration: 10 m
+Directions: Blend ice, coconut milk, coffee, sugar, hot chocolate mix, and vanilla extract together in a blender until smooth
+Nutrients: 
+Servings: 1
+Calories: 542
+Fat: 36.5
+Carbohydrates: 49.0
+Protein: 4.0
+
+
+Source: https://www.allrecipes.com/recipe/237868/mocha-smoothie/?internalSource=hub%20recipe&referringId=138&referringContentType=recipe%20hub
