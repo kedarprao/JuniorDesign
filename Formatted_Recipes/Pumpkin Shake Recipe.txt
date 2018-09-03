@@ -1,0 +1,15 @@
+Title: Pumpkin Shake Recipe
+Image: https://images.media-allrecipes.com/userphotos/560x315/1115190.jpg
+Rating: 3.59999990463257
+Ingredients: 4.0 cubes ice,1.0 cup skim milk,0.3333333333333333 cup pumpkin puree,0.3333333333333333 cup plain fat-free Greek yogurt,0.5 frozen banana,1.0 pinch ground cinnamon,1.0 pinch ground ginger,1.0 pinch ground nutmeg,1.0 pinch ground allspice,1.0 teaspoon vanilla extract
+Duration: 5 m
+Directions: Blend ice, milk, pumpkin puree, yogurt, banana, cinnamon, ginger, nutmeg, allspice, and vanilla in a blender until smooth
+Nutrients: 
+Servings: 1
+Calories: 230
+Fat: 1.1
+Carbohydrates: 38.5
+Protein: 16.6
+
+
+Source: https://www.allrecipes.com/recipe/236614/pumpkin-shake/?internalSource=hub%20recipe&referringId=138&referringContentType=recipe%20hub

@@ -1,0 +1,15 @@
+Title: Three Melon Smoothie Recipe
+Image: https://images.media-allrecipes.com/userphotos/250x250/249415.jpg
+Rating: 3.33333325386047
+Ingredients: 2.0 cups seedless watermelon,1.0 cup honeydew melon,1.0 cup cantaloupe melon,0.5 cup ice cubes,0.5 cup lemon-lime soda pop
+Duration: 15 m
+Directions: Place the watermelon, honeydew, cantaloupe, and ice in a blender;  Pour in the lemon-lime soda and puree until smooth
+Nutrients: 
+Servings: 4
+Calories: 65
+Fat: 0.2
+Carbohydrates: 16.3
+Protein: 1.0
+
+
+Source: https://www.allrecipes.com/recipe/108461/three-melon-smoothie/?internalSource=hub%20recipe&referringId=138&referringContentType=recipe%20hub

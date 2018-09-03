@@ -1,0 +1,15 @@
+Title: Granana Smoothie Recipe
+Image: https://images.media-allrecipes.com/userphotos/560x315/4561983.jpg
+Rating: 3.82352948188782
+Ingredients: 0.5 cup 2% milk ,1.0 Granny Smith apple - peeled,1.0 banana,2.0 ice cubes
+Duration: 10 m
+Directions: Blend the milk, apple, banana, and ice cubes in a blender until smooth; divide between 2 glasses to serve
+Nutrients: 
+Servings: 2
+Calories: 113
+Fat: 1.4
+Carbohydrates: 24.9
+Protein: 2.9
+
+
+Source: https://www.allrecipes.com/recipe/215183/granana-smoothie/?internalSource=hub%20recipe&referringId=138&referringContentType=recipe%20hub
