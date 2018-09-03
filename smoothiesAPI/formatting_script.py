@@ -2,12 +2,12 @@ import os
 import re
 
 dir_name = "Smoothie-Recipes"
-new_dir = "Formatted_Recipes"
+new_dir = "Formatted-Recipes"
 
-i_pattern = r"Ingredient\:.+"
-oi_pattern = r"Ingredients\:.+"
-d_pattern = r"Directions\:.+"
-s_pattern = r"Step\:.+"
+i_pattern = r"ingredient\:.+"
+oi_pattern = r"ingredients\:.+"
+d_pattern = r"directions\:.+"
+s_pattern = r"step\:.+"
 
 
 if __name__ == "__main__":
@@ -17,7 +17,9 @@ if __name__ == "__main__":
             lines = recipe.readlines()
 
             ingredient_list = []
+            step_list = []
             for line in lines:
+                line[0].lower()
                 match = re.search(i_pattern, line)
                 if match:
                     # print(f"In file {filename}, these are the ingredients:\n")
@@ -29,7 +31,7 @@ if __name__ == "__main__":
                     continue
                 elif match is None and len(ingredient_list) != 0:
                     print(f"Replacing Ingredient list with {ingredient_list}")
-                    new_str = "Ingredients: " + ",".join(ingredient_list) + "\n"
+                    new_str = "ingredients: " + ",".join(ingredient_list) + "\n"
                     new_file.append(new_str)
                     ingredient_list = []
                     continue
@@ -44,13 +46,27 @@ if __name__ == "__main__":
                 
                 match = re.search(s_pattern, line)
                 if match:
+                    ing = match.group()[6:]
+                    if "," in ing:
+                        ing = ing[:ing.index(",")]
+                    step_list.append(ing)
+                    continue
+                elif match is None and len(step_list) != 0:
+                    print(f"Replacing Step list with {step_list}")
+                    new_str = "directions: " + ",".join(step_list) + "\n"
+                    new_file.append(new_str)
+                    step_list = []
+                    """
                     steps = match.group()[6:]
                     steps = ";".join(filter(None, steps.split(".")))
                     new_str = "Directions: " + steps + "\n"
-                    print(f"Replacing steps {match.group()} with {new_str}")
+                    print(f"Replacing steps {match.group()} with {new_str}
+                    """
                     new_file.append(new_str)
                 else:
                     new_file.append(line)
+
+        filename = filename[:-4] + ".yaml"
         with open(os.path.join(new_dir, filename),"w+") as f:
             print(f"Writing to file {os.path.join(new_dir, filename)}.")
             f.seek(0)
