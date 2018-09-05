@@ -11,7 +11,6 @@
 		97DE26A4208952C400905863 /* smoothies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97DE26A3208952C300905863 /* smoothies.jpg */; };
 		97DE26A62089617000905863 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE26A52089617000905863 /* DaySchedule.swift */; };
 		BEA574422081037B00662510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574412081037B00662510 /* AppDelegate.swift */; };
-		BEA574442081037B00662510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574432081037B00662510 /* ViewController.swift */; };
 		BEA574472081037B00662510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA574452081037B00662510 /* Main.storyboard */; };
 		BEA574492081037D00662510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA574482081037D00662510 /* Images.xcassets */; };
 		BEA5744C2081037D00662510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA5744A2081037D00662510 /* LaunchScreen.storyboard */; };
@@ -44,10 +43,8 @@
 		97DE269B20893E0C00905863 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		97DE26A3208952C300905863 /* smoothies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smoothies.jpg; sourceTree = "<group>"; };
 		97DE26A52089617000905863 /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
-		97DE26A72089626C00905863 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = /Users/kedar/Gatech/JuniorDesign/Smoothies/Smoothies/calendar.png; sourceTree = "<absolute>"; };
 		BEA5743E2081037B00662510 /* Smoothies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoothies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA574412081037B00662510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEA574432081037B00662510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BEA574462081037B00662510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEA574482081037D00662510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEA5744B2081037D00662510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +86,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97DF241E2140877F000B319D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				97DE26A52089617000905863 /* DaySchedule.swift */,
+				97DE269B20893E0C00905863 /* Scheduler.swift */,
+				BEA5747920812B3B00662510 /* Budget.swift */,
+				BEA5747D20812ED800662510 /* FavoriteFruits.swift */,
+				BEA5747F2081312900662510 /* DietaryRestrictions.swift */,
+				BEA5747B20812D8000662510 /* WeightGoals.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		97DF241F2140879D000B319D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BEA574482081037D00662510 /* Images.xcassets */,
+				97DE26A3208952C300905863 /* smoothies.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		BEA574352081037B00662510 = {
 			isa = PBXGroup;
 			children = (
@@ -112,19 +131,11 @@
 		BEA574402081037B00662510 /* Smoothies */ = {
 			isa = PBXGroup;
 			children = (
-				97DE26A52089617000905863 /* DaySchedule.swift */,
-				97DE269B20893E0C00905863 /* Scheduler.swift */,
 				BEA574412081037B00662510 /* AppDelegate.swift */,
-				BEA574432081037B00662510 /* ViewController.swift */,
 				BEA574452081037B00662510 /* Main.storyboard */,
-				BEA5747920812B3B00662510 /* Budget.swift */,
-				BEA5747D20812ED800662510 /* FavoriteFruits.swift */,
-				BEA5747F2081312900662510 /* DietaryRestrictions.swift */,
-				BEA5747B20812D8000662510 /* WeightGoals.swift */,
-				97DE26A72089626C00905863 /* calendar.png */,
-				BEA574482081037D00662510 /* Images.xcassets */,
-				97DE26A3208952C300905863 /* smoothies.jpg */,
 				BEA5744A2081037D00662510 /* LaunchScreen.storyboard */,
+				97DF241E2140877F000B319D /* Onboarding */,
+				97DF241F2140879D000B319D /* Assets */,
 				BEA5744D2081037D00662510 /* Info.plist */,
 			);
 			path = Smoothies;
@@ -283,7 +294,6 @@
 				BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */,
 				97DE269C20893E0C00905863 /* Scheduler.swift in Sources */,
 				BEA5747A20812B3B00662510 /* Budget.swift in Sources */,
-				BEA574442081037B00662510 /* ViewController.swift in Sources */,
 				BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */,
 				BEA574422081037B00662510 /* AppDelegate.swift in Sources */,
 				BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */,
