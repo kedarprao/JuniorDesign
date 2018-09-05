@@ -19,7 +19,7 @@ if __name__ == "__main__":
             ingredient_list = []
             step_list = []
             for line in lines:
-                line[0].lower()
+                line = line[0].lower() + line[1:]
                 match = re.search(i_pattern, line)
                 if match:
                     # print(f"In file {filename}, these are the ingredients:\n")
@@ -46,14 +46,12 @@ if __name__ == "__main__":
                 
                 match = re.search(s_pattern, line)
                 if match:
-                    ing = match.group()[6:]
-                    if "," in ing:
-                        ing = ing[:ing.index(",")]
-                    step_list.append(ing)
+                    step = match.group()[5:]
+                    step_list.append(step)
                     continue
                 elif match is None and len(step_list) != 0:
                     print(f"Replacing Step list with {step_list}")
-                    new_str = "directions: " + ",".join(step_list) + "\n"
+                    new_str = "directions: " + ";".join(step_list) + "\n"
                     new_file.append(new_str)
                     step_list = []
                     """
@@ -62,11 +60,14 @@ if __name__ == "__main__":
                     new_str = "Directions: " + steps + "\n"
                     print(f"Replacing steps {match.group()} with {new_str}
                     """
-                    new_file.append(new_str)
                 else:
                     new_file.append(line)
 
         filename = filename[:-4] + ".yaml"
+        if not os.path.exists(new_dir):
+            os.mkdir(new_dir)
+        # elif not os.path.isdir(new_dir):
+        #     throw Exception("Could not find folder")
         with open(os.path.join(new_dir, filename),"w+") as f:
             print(f"Writing to file {os.path.join(new_dir, filename)}.")
             f.seek(0)

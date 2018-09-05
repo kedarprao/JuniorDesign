@@ -41,7 +41,7 @@ def parse_file(filename):
         return new_recipe
         
 def create_insert(recipe):
-
+    return
 
 
 if __name__ == '__main__':
