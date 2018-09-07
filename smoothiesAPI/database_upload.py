@@ -3,10 +3,10 @@ from yaml import load, dump
 import mysql.connector
 
 mydb = mysql.connector.connect(
-    host="localhost",
-    user="yourusername",
-    passwd="yourpassword",
-    database="mydatabase"
+    host=os.environ["AWS_HOST"],
+    user=os.environ["AWS_USERNAME"],
+    passwd=os.environ["AWS_PASSWORD"],
+    database="smoothiesdb"
     )
 
 global recipe_id = 0
@@ -62,5 +62,5 @@ if __name__ == '__main__':
 
     mycursor = mydb.cursor()
 
-    sql = """insert into city(name, countrycode, district, population)\
+    recipe_table_sql = """insert into Recipe(, countrycode, district, population)\
             VALUES(%s, %s, %s, %s)"""

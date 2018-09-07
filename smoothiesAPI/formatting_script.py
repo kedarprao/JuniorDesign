@@ -9,6 +9,8 @@ oi_pattern = r"ingredients\:.+"
 d_pattern = r"directions\:.+"
 s_pattern = r"step\:.+"
 
+global_ing_list = []
+measure_words = ["cup", "scoop", "teaspoon", "teaspoons", "cups", "frozen", "tablespoon", "tablespoons", "can" , "ounce", "ounce)","ounces", "ounces)", "pinches","pinch", "piece", "container", "containers"]
 
 if __name__ == "__main__":
     for filename in os.listdir("Smoothie-Recipes"):
@@ -28,6 +30,8 @@ if __name__ == "__main__":
                     if "," in ing:
                         ing = ing[:ing.index(",")]
                     ingredient_list.append(ing)
+                    if ing not in global_ing_list:
+                        global_ing_list.append(ing)
                     continue
                 elif match is None and len(ingredient_list) != 0:
                     print(f"Replacing Ingredient list with {ingredient_list}")
@@ -72,4 +76,15 @@ if __name__ == "__main__":
             print(f"Writing to file {os.path.join(new_dir, filename)}.")
             f.seek(0)
             f.writelines(new_file)
+
+    fin_list = [" ".join([word for word in ing.split(" ")[1:] if word not in measure_words]) + "\n" for ing in global_ing_list]
+    with open("ingredient_list.txt", "w+") as f:
+        f.writelines(fin_list)
+    # print([x for x in ing.split(" ")[1:] for ing in global_ing_list if x not in measure_words])
+
+
+        # for x in global_ing_list:
+        #     lis_x = x.split()
+            
+
 
