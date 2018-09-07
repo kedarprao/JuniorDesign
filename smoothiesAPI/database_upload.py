@@ -9,6 +9,9 @@ mydb = mysql.connector.connect(
     database="mydatabase"
     )
 
+global recipe_id = 0
+mycursor = mydb.cursor()
+
 class Recipe():
     def __init__(self, **kwargs):
         self.title = kwargs.pop('title')
@@ -41,6 +44,17 @@ def parse_file(filename):
         return new_recipe
         
 def create_insert(recipe):
+    recipe_sql = "INSERT INTO Recipes(recipe_id, title, image, rating, directions, servings, " \
+          "calories, fat, carbohydrates, protein) VALUES (%d, %s, %s, %f, %s, %d, %d, %d, %d, %d)"
+    recipe_value = (recipe_id, recipe.title, recipe.image, recipe.rating, recipe.directions,
+                    recipe.servings, recipe.calories, recipe.fat, recipe.carbohydrates,
+                    recipe.protein, recipe.ingredients)
+    recipe_id += 1
+    mycursor.execute(recipe_sql, recipe_value)
+
+    ingredient_sql = "INSERT INTO Ingredient(ingredient_id, ingredient_name) VALUES (%d, %s)"
+    ingredient_values = ()
+
     return
 
 
