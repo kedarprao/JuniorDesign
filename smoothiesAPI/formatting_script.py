@@ -77,7 +77,7 @@ if __name__ == "__main__":
             f.seek(0)
             f.writelines(new_file)
 
-    fin_list = [" ".join([word for word in ing.split(" ")[1:] if word not in measure_words]) + "\n" for ing in global_ing_list]
+    fin_list = list(set([" ".join([word for word in ing.split(" ")[1:] if word not in measure_words]) + "\n" for ing in global_ing_list]))
     with open("ingredient_list.txt", "w+") as f:
         f.writelines(fin_list)
     # print([x for x in ing.split(" ")[1:] for ing in global_ing_list if x not in measure_words])
