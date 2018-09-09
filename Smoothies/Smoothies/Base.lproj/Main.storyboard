@@ -352,7 +352,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Bananas">
+                                <state key="normal" title="Banana">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -686,7 +686,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="qtD-J2-aWf"/>
         <segue reference="RvZ-mb-f5s"/>
-        <segue reference="xVU-ZS-aEn"/>
+        <segue reference="KFB-v4-0ln"/>
         <segue reference="Gnr-k3-DXJ"/>
     </inferredMetricsTieBreakers>
 </document>
