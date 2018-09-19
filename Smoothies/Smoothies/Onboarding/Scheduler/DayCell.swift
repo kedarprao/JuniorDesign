@@ -19,4 +19,7 @@ class DayCell: UITableViewCell {
     func update() {
         smoothieSwitch.isOn = false
     }
+    
+
+    
 }
