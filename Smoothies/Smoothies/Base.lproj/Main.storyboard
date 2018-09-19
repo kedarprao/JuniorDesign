@@ -263,6 +263,9 @@
                                         <state key="normal" title="Lose Weight">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lose:" destination="SdV-mA-uYK" eventType="touchUpInside" id="ROg-lF-SeB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEl-q8-muo">
                                         <rect key="frame" x="0.0" y="247.66666666666666" width="295" height="83.666666666666657"/>
@@ -271,6 +274,9 @@
                                         <state key="normal" title="Maintain Weight">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="maintain:" destination="SdV-mA-uYK" eventType="touchUpInside" id="cHO-y6-LU3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ms2-mn-Z1d">
                                         <rect key="frame" x="0.0" y="371.33333333333331" width="295" height="83.666666666666686"/>
@@ -279,6 +285,9 @@
                                         <state key="normal" title="None">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="none:" destination="SdV-mA-uYK" eventType="touchUpInside" id="Klu-FS-Agw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -561,6 +570,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="gluten:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="eAC-Oe-pi0"/>
                                     <action selector="watermelon:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="IIC-4q-uyY"/>
                                 </connections>
                             </button>
@@ -574,6 +584,7 @@
                                 </state>
                                 <connections>
                                     <action selector="blueberry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="nW1-qK-KN2"/>
+                                    <action selector="pinenut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="abp-j8-V3y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7dh-9y-d41">
@@ -585,6 +596,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="hazelnut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="Mu7-GC-kNk"/>
                                     <action selector="orange:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="qob-2K-ACM"/>
                                 </connections>
                             </button>
@@ -597,6 +609,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="peanut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="LLQ-mN-CTo"/>
                                     <action selector="raspberry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="OnC-ef-iWt"/>
                                 </connections>
                             </button>
@@ -610,6 +623,7 @@
                                 </state>
                                 <connections>
                                     <action selector="bananas:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="Mem-9O-8CK"/>
+                                    <action selector="vegan:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="mtC-Mv-BKs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-x9-Dhl">
@@ -622,6 +636,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pineapple:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="EhC-6A-ZGG"/>
+                                    <action selector="vegetarian:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="Ip1-Kc-7i0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tXY-8q-Op5">
@@ -634,6 +649,7 @@
                                 </state>
                                 <connections>
                                     <action selector="mango:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="1R0-vE-oCl"/>
+                                    <action selector="sugarfree:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="tqa-dd-EBR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hK4-HQ-s7C">
@@ -641,11 +657,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Soy free">
+                                <state key="normal" title="Soy Free">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="blackberry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="Nwp-Pj-gQo"/>
+                                    <action selector="soyfree:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="ZVo-Bi-qSU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EsU-ix-CRG">
@@ -658,6 +675,7 @@
                                 </state>
                                 <connections>
                                     <action selector="cherry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="DB4-k7-5tc"/>
+                                    <action selector="kosher:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="lnq-WB-9eX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igx-wG-y9N">
@@ -702,7 +720,16 @@
                         <viewLayoutGuide key="safeArea" id="8an-Ak-rtr"/>
                     </view>
                     <connections>
+                        <outlet property="gluten" destination="a3r-bE-R2i" id="f15-4y-aNS"/>
+                        <outlet property="hazelnut" destination="7dh-9y-d41" id="nYk-Nw-MBa"/>
+                        <outlet property="kosher" destination="EsU-ix-CRG" id="hXr-wu-vzD"/>
                         <outlet property="lactose" destination="sWH-rd-7Dz" id="uDG-av-ft5"/>
+                        <outlet property="peanut" destination="urs-Yf-8Xq" id="w91-Ne-ZVo"/>
+                        <outlet property="pinenut" destination="6Mv-Nd-snn" id="COh-y0-AOD"/>
+                        <outlet property="soyfree" destination="hK4-HQ-s7C" id="0UL-u8-gEN"/>
+                        <outlet property="sugarfree" destination="tXY-8q-Op5" id="U3t-xA-bF0"/>
+                        <outlet property="vegan" destination="9vA-ht-MO8" id="Qfj-ac-7Bw"/>
+                        <outlet property="vegetarian" destination="9Lc-x9-Dhl" id="fyz-Vi-W2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ej-6E-RnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -734,6 +761,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="CPS-W2-ce0" kind="show" id="WG9-UW-EDy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJo-Pg-xDB">
                                 <rect key="frame" x="7" y="737" width="75" height="30"/>
@@ -781,6 +811,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqR-Zx-qI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5717.6000000000004" y="31.773399014778327"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Xto-4D-9eR">
+            <objects>
+                <viewController id="ajp-oi-XGO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QTC-bV-Bxm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lP3-jy-W8G"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="CAq-Hh-anu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBZ-gW-D2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7096.8000000000002" y="1070.6896551724139"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="vpM-IO-9UG">
+            <objects>
+                <viewController id="oLz-GE-p8V" customClass="HomePageVC" customModule="Smoothies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXV-Np-CUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kEf-tv-EDf">
+                                <rect key="frame" x="0.0" y="109" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4PD-bj-5up"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="zPW-xl-LOB"/>
+                    <connections>
+                        <outlet property="HomePageTableView" destination="kEf-tv-EDf" id="MGw-Ir-T0M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpv-NC-H1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7096.8000000000002" y="255.66502463054189"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oHs-rj-Djg">
+            <objects>
+                <tabBarController id="CPS-W2-ce0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZU-kf-jNf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oLz-GE-p8V" kind="relationship" relationship="viewControllers" id="QE0-Yl-YYd"/>
+                        <segue destination="ajp-oi-XGO" kind="relationship" relationship="viewControllers" id="W83-MK-lpi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXw-Sa-UMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5718" y="990"/>
         </scene>
     </scenes>
     <resources>
