@@ -12,7 +12,10 @@ class WeightGoals: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        gain.backgroundColor = UIColor.lightGray
+        lose.backgroundColor = UIColor.lightGray
+        maintain.backgroundColor = UIColor.lightGray
+        none.backgroundColor = UIColor.lightGray
         // Do any additional setup after loading the view.
     }
 
@@ -27,17 +30,34 @@ class WeightGoals: UIViewController {
     @IBOutlet weak var none: UIButton!
     
     @IBAction func gain(_ sender: Any) {
-        gain.backgroundColor = UIColor.lightGray
+        if (gain.backgroundColor == UIColor.darkGray) {
+            gain.backgroundColor = UIColor.lightGray
+        } else {
+            gain.backgroundColor = UIColor.darkGray
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func lose(_ sender: Any) {
+        if (lose.backgroundColor == UIColor.darkGray) {
+            lose.backgroundColor = UIColor.lightGray
+        } else {
+            lose.backgroundColor = UIColor.darkGray
+        }
     }
-    */
 
+    @IBAction func maintain(_ sender: Any) {
+        if (maintain.backgroundColor == UIColor.darkGray) {
+            maintain.backgroundColor = UIColor.lightGray
+        } else {
+            maintain.backgroundColor = UIColor.darkGray
+        }
+    }
+    
+    @IBAction func none(_ sender: Any) {
+        if (none.backgroundColor == UIColor.darkGray) {
+            none.backgroundColor = UIColor.lightGray
+        } else {
+            none.backgroundColor = UIColor.darkGray
+        }
+    }
 }

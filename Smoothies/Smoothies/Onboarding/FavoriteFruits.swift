@@ -12,16 +12,16 @@ class FavoriteFruits: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        strawberry.backgroundColor = UIColor.white
-        watermelon.backgroundColor = UIColor.white
-        blueberry.backgroundColor = UIColor.white
-        orange.backgroundColor = UIColor.white
-        raspberry.backgroundColor = UIColor.white
-        bananas.backgroundColor = UIColor.white
-        pineapple.backgroundColor = UIColor.white
-        mango.backgroundColor = UIColor.white
-        blackberry.backgroundColor = UIColor.white
-        cherry.backgroundColor = UIColor.white
+        strawberry.backgroundColor = UIColor.lightGray
+        watermelon.backgroundColor = UIColor.lightGray
+        blueberry.backgroundColor = UIColor.lightGray
+        orange.backgroundColor = UIColor.lightGray
+        raspberry.backgroundColor = UIColor.lightGray
+        bananas.backgroundColor = UIColor.lightGray
+        pineapple.backgroundColor = UIColor.lightGray
+        mango.backgroundColor = UIColor.lightGray
+        blackberry.backgroundColor = UIColor.lightGray
+        cherry.backgroundColor = UIColor.lightGray
 
         // Do any additional setup after loading the view.
     }
@@ -43,93 +43,83 @@ class FavoriteFruits: UIViewController {
     @IBOutlet weak var cherry: UIButton!
     
     @IBAction func strawberry(_ sender: Any) {
-        if (strawberry.backgroundColor == UIColor.white) {
+        if (strawberry.backgroundColor == UIColor.darkGray) {
             strawberry.backgroundColor = UIColor.lightGray;
         } else {
-            strawberry.backgroundColor = UIColor.white;
+            strawberry.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func watermelon(_ sender: Any) {
-        if (watermelon.backgroundColor == UIColor.white) {
+        if (watermelon.backgroundColor == UIColor.darkGray) {
             watermelon.backgroundColor = UIColor.lightGray;
         } else {
-            watermelon.backgroundColor = UIColor.white;
+            watermelon.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func blueberry(_ sender: Any) {
-        if (blueberry.backgroundColor == UIColor.white) {
+        if (blueberry.backgroundColor == UIColor.darkGray) {
             blueberry.backgroundColor = UIColor.lightGray;
         } else {
-            blueberry.backgroundColor = UIColor.white;
+            blueberry.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func orange(_ sender: Any) {
-        if (orange.backgroundColor == UIColor.white) {
+        if (orange.backgroundColor == UIColor.darkGray) {
             orange.backgroundColor = UIColor.lightGray;
         } else {
-            orange.backgroundColor = UIColor.white;
+            orange.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func raspberry(_ sender: Any) {
-        if (raspberry.backgroundColor == UIColor.white) {
+        if (raspberry.backgroundColor == UIColor.darkGray) {
             raspberry.backgroundColor = UIColor.lightGray;
         } else {
-            raspberry.backgroundColor = UIColor.white;
+            raspberry.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func bananas(_ sender: Any) {
-        if (bananas.backgroundColor == UIColor.white) {
+        if (bananas.backgroundColor == UIColor.darkGray) {
             bananas.backgroundColor = UIColor.lightGray;
         } else {
-            bananas.backgroundColor = UIColor.white;
+            bananas.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func pineapple(_ sender: Any) {
-        if (pineapple.backgroundColor == UIColor.white) {
+        if (pineapple.backgroundColor == UIColor.darkGray) {
             pineapple.backgroundColor = UIColor.lightGray;
         } else {
-            pineapple.backgroundColor = UIColor.white;
+            pineapple.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func mango(_ sender: Any) {
-        if (mango.backgroundColor == UIColor.white) {
+        if (mango.backgroundColor == UIColor.darkGray) {
             mango.backgroundColor = UIColor.lightGray;
         } else {
-            mango.backgroundColor = UIColor.white;
+            mango.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func blackberry(_ sender: Any) {
-        if (blackberry.backgroundColor == UIColor.white) {
+        if (blackberry.backgroundColor == UIColor.darkGray) {
             blackberry.backgroundColor = UIColor.lightGray;
         } else {
-            blackberry.backgroundColor = UIColor.white;
+            blackberry.backgroundColor = UIColor.darkGray;
         }
     }
     
     @IBAction func cherry(_ sender: Any) {
-        if (cherry.backgroundColor == UIColor.white) {
+        if (cherry.backgroundColor == UIColor.darkGray) {
             cherry.backgroundColor = UIColor.lightGray;
         } else {
-            cherry.backgroundColor = UIColor.white;
+            cherry.backgroundColor = UIColor.darkGray;
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
