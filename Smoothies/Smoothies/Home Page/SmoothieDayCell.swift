@@ -21,8 +21,17 @@ class SmoothieDayCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func update() {
-        return
+    func setup() {
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(tapped(_:))
+        )
+        tap.numberOfTapsRequired = 1
+        self.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapped(_ sender: UITapGestureRecognizer) {
+        //segue to new viewcontroller
     }
     
     /* IBoutlet tap gesture recognizer {
