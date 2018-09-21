@@ -163,7 +163,13 @@
 			children = (
 				BEA574412081037B00662510 /* AppDelegate.swift */,
 				BEA574452081037B00662510 /* Main.storyboard */,
+<<<<<<< HEAD
 				973F1AC721553BCC00825E19 /* Home Page */,
+=======
+				973F1ABF2152A6AB00825E19 /* HomePageVC.swift */,
+				973F1AC32152A7CF00825E19 /* SmoothieDayCell.swift */,
+				973F1AC42152A7CF00825E19 /* SmoothieDayCell.xib */,
+>>>>>>> 896076ef3cab9d4a093c962df3a50ed3a7215ecc
 				BEA5744A2081037D00662510 /* LaunchScreen.storyboard */,
 				97DF241E2140877F000B319D /* Onboarding */,
 				97DF241F2140879D000B319D /* Assets */,
