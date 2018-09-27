@@ -9,17 +9,20 @@
 import UIKit
 
 private let kSmoothieDayCellID = "SMOOTHIEDAYCELL"
+var numSmoothiesArr: [Int] = [0, 0, 0, 0, 0, 0, 0]
 
 class HomePageVC: UIViewController {
     
     let days: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-
+    var dayCell: DayCell?;
+    
     @IBOutlet weak var HomePageTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         // Do any additional setup after loading the view.
+        //dayCell?.numSmoothiesArr[0]// num smoothies on monday
     }
     
     func setupUI() {
@@ -38,8 +41,23 @@ extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
         /* get data from Scheduler.swift for how many smoothies a day and put it in here for each section.
         if section == 0 (Monday) {
         return num
- */
-        return 1
+         */
+        if section == 0 {
+            return numSmoothiesArr[0]
+        } else if section == 1{
+            return numSmoothiesArr[1]
+        } else if section == 2{
+            return numSmoothiesArr[2]
+        } else if section == 3{
+            return numSmoothiesArr[3]
+        } else if section == 4{
+            return numSmoothiesArr[4]
+        } else if section == 5{
+            return numSmoothiesArr[5]
+        } else if section == 6 {
+            return numSmoothiesArr[6]
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

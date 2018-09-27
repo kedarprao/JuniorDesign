@@ -44,6 +44,7 @@ extension Scheduler: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kDAYCELLID) as! DayCell
+        cell.schedulerTableView = schedulerTableView
         cell.update()
         return cell
     }
@@ -56,7 +57,6 @@ extension Scheduler: UITableViewDataSource {
 
 extension Scheduler: UITableViewDelegate {    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        print(section)
         return days[section]
     }
     

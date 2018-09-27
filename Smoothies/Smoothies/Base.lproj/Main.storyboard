@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -745,7 +743,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-Ne-stC">
-                                <rect key="frame" x="0.0" y="119" width="374.66666666666669" height="609"/>
+                                <rect key="frame" x="0.0" y="119" width="375" height="609"/>
                                 <color key="backgroundColor" red="0.8866394353" green="0.72536354540000003" blue="0.84035773280000003" alpha="0.77204623289999996" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI2-fs-SQQ">
@@ -785,7 +783,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.8866394353" green="0.72536354540000003" blue="0.84035773280000003" alpha="0.77204623289999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.70588235294117652" green="0.55294117647058827" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HJo-Pg-xDB" secondAttribute="trailing" constant="20" symbolic="YES" id="433-9d-zub"/>
                             <constraint firstItem="OcS-Ne-stC" firstAttribute="top" secondItem="MOq-jc-Zco" secondAttribute="bottom" constant="29" id="6OH-03-n1e"/>
@@ -812,7 +810,7 @@
             </objects>
             <point key="canvasLocation" x="5717.6000000000004" y="31.773399014778327"/>
         </scene>
-        <!--Settings-->
+        <!--View Controller-->
         <scene sceneID="Xto-4D-9eR">
             <objects>
                 <viewController id="ajp-oi-XGO" sceneMemberID="viewController">
@@ -822,13 +820,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lP3-jy-W8G"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="CAq-Hh-anu"/>
+                    <tabBarItem key="tabBarItem" title="" image="settings" id="CAq-Hh-anu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TBZ-gW-D2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7096.8000000000002" y="1070.6896551724139"/>
         </scene>
-        <!--Home-->
+        <!--Home PageVC-->
         <scene sceneID="vpM-IO-9UG">
             <objects>
                 <viewController id="oLz-GE-p8V" customClass="HomePageVC" customModule="Smoothies" customModuleProvider="target" sceneMemberID="viewController">
@@ -841,11 +839,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smoothies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-ub-nj8">
+                                <rect key="frame" x="129" y="54" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.70196078431372544" green="0.55686274509803924" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4PD-bj-5up"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="zPW-xl-LOB"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="zPW-xl-LOB"/>
                     <connections>
                         <outlet property="HomePageTableView" destination="kEf-tv-EDf" id="MGw-Ir-T0M"/>
                     </connections>
@@ -861,7 +866,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZU-kf-jNf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.70196078429999997" green="0.5568627451" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="oLz-GE-p8V" kind="relationship" relationship="viewControllers" id="QE0-Yl-YYd"/>
@@ -875,6 +881,8 @@
     </scenes>
     <resources>
         <image name="background" width="548" height="639"/>
+        <image name="home" width="30" height="30"/>
+        <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R8W-ah-J5K"/>
