@@ -305,8 +305,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNext:" destination="SdV-mA-uYK" eventType="touchUpInside" id="pca-q0-3Oc"/>
-                                    <segue destination="hzy-Qm-TWL" kind="show" id="RvZ-mb-f5s"/>
+                                    <segue destination="hzy-Qm-TWL" kind="show" id="1To-ag-pd7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4z-Mq-2TU">
@@ -500,7 +499,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNext:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="KsM-Of-be2"/>
                                     <segue destination="zI1-wr-JL2" kind="show" id="xf8-SP-pTE"/>
                                 </connections>
                             </button>
@@ -699,8 +697,8 @@
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R8W-ah-J5K"/>
-        <segue reference="RvZ-mb-f5s"/>
+        <segue reference="qtD-J2-aWf"/>
+        <segue reference="1To-ag-pd7"/>
         <segue reference="KFB-v4-0ln"/>
         <segue reference="Gnr-k3-DXJ"/>
     </inferredMetricsTieBreakers>

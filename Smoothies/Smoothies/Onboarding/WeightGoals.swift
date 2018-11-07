@@ -94,9 +94,5 @@ class WeightGoals: UIViewController {
             weightGoals = "None"
         }
     }
-    @IBAction func onNext(_ sender: Any) {
-        //return string
-    }
-    
     
 }

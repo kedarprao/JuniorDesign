@@ -11,8 +11,14 @@ import UIKit
 class IngredientsCell: UITableViewCell {
 
     @IBOutlet weak var ingredientLabel: UILabel!
-    @IBOutlet weak var ingredientSelected: UISwitch!
+    @IBOutlet weak var ingredientSlider: UISlider!
     
+    let step: Float = 0.5
+    @IBAction func ingredientSliderChanged(_ sender: UISlider) {
+        let roundedValue = round(sender.value / step) * step
+        sender.value = roundedValue
+        print(sender.value)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,11 +26,6 @@ class IngredientsCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        if(ingredientSelected.isOn) {
-            ingredientSelected.isOn = false
-        } else {
-            ingredientSelected.isOn = true
-        }
         // Configure the view for the selected state
     }
     

@@ -19,23 +19,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXS-gE-rbc">
-                        <rect key="frame" x="255" y="16" width="49" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </switch>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TN-Pc-AQn">
-                        <rect key="frame" x="16" y="15" width="223" height="32"/>
+                        <rect key="frame" x="16" y="15" width="166" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7C-ih-RfP">
+                        <rect key="frame" x="188" y="17" width="118" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="ingredientSliderChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="hP8-7b-bDy"/>
+                        </connections>
+                    </slider>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="ingredientLabel" destination="7TN-Pc-AQn" id="LWT-zk-Sgb"/>
-                <outlet property="ingredientSelected" destination="GXS-gE-rbc" id="avS-XK-whe"/>
+                <outlet property="ingredientSlider" destination="b7C-ih-RfP" id="wrg-1B-3JW"/>
             </connections>
             <point key="canvasLocation" x="52.799999999999997" y="71.064467766116948"/>
         </tableViewCell>

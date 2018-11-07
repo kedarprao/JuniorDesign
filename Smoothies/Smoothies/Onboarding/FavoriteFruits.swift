@@ -39,10 +39,11 @@ class FavoriteFruits: UIViewController {
         IngredientsTableView.dataSource = self
         IngredientsTableView.register(UINib.init(nibName: "IngredientsCell", bundle: Bundle.main), forCellReuseIdentifier: kINGREDIENTSCELLID)
     }
+    
     @IBAction func FavoredIngredients(_ sender: UIButton) {
         for cell in self.IngredientsTableView.visibleCells {
             let ingredientCell = cell as! IngredientsCell
-            if (ingredientCell.ingredientSelected.isOn) {
+            if (ingredientCell.ingredientSlider.value == 1.0) {
                 favoredIngredients.append(ingredientCell.ingredientLabel.text ?? "")
             }
         }
@@ -89,7 +90,6 @@ extension FavoriteFruits: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kINGREDIENTSCELLID) as! IngredientsCell
         cell.ingredientLabel.text = ingredients[indexPath.row]
-        cell.ingredientSelected.isOn = false
         return cell
     }
     

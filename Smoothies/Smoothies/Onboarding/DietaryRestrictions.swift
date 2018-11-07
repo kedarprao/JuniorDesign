@@ -78,9 +78,6 @@ class DietaryRestrictions: UIViewController {
             restrictions.append("Peanut")
         }
     }
-    
-    @IBAction func onNext(_ sender: Any) {
-        //send information to backend
-    }
+
     
 }
