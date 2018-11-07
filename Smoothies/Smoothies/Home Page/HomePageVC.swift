@@ -7,14 +7,16 @@
 //
 
 import UIKit
-
+;
 private let kSmoothieDayCellID = "SMOOTHIEDAYCELL"
 var numSmoothiesArr: [Int] = [0, 0, 0, 0, 0, 0, 0]
 
 class HomePageVC: UIViewController {
     
     let days: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-    var dayCell: DayCell?;
+    var dayCell: DayCell?;    
+    
+    var smoothie = smoothies
     
     @IBOutlet weak var HomePageTableView: UITableView!
     
@@ -62,6 +64,7 @@ extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kSmoothieDayCellID) as! SmoothieDayCell
+        cell.smoothieName.text = "7"
         cell.setup()
         return cell
     }

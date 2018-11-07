@@ -305,6 +305,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="onNext:" destination="SdV-mA-uYK" eventType="touchUpInside" id="pca-q0-3Oc"/>
                                     <segue destination="hzy-Qm-TWL" kind="show" id="RvZ-mb-f5s"/>
                                 </connections>
                             </button>
@@ -429,7 +430,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sWH-rd-7Dz">
-                                <rect key="frame" x="11" y="176" width="156" height="70"/>
+                                <rect key="frame" x="11" y="186" width="156" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -442,7 +443,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="a3r-bE-R2i">
-                                <rect key="frame" x="11" y="277" width="156" height="70"/>
+                                <rect key="frame" x="11" y="340" width="156" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -455,7 +456,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6Mv-Nd-snn">
-                                <rect key="frame" x="209" y="176" width="156" height="70"/>
+                                <rect key="frame" x="203" y="186" width="156" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -467,21 +468,8 @@
                                     <action selector="pinenut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="abp-j8-V3y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7dh-9y-d41">
-                                <rect key="frame" x="209" y="278" width="156" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Hazel Nut Allergy">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="hazelnut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="Mu7-GC-kNk"/>
-                                    <action selector="orange:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="qob-2K-ACM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="urs-Yf-8Xq">
-                                <rect key="frame" x="11" y="372" width="156" height="70"/>
+                                <rect key="frame" x="113" y="478" width="156" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -491,71 +479,6 @@
                                 <connections>
                                     <action selector="peanut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="LLQ-mN-CTo"/>
                                     <action selector="raspberry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="OnC-ef-iWt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9vA-ht-MO8">
-                                <rect key="frame" x="209" y="372" width="156" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Vegan">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="bananas:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="Mem-9O-8CK"/>
-                                    <action selector="vegan:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="mtC-Mv-BKs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-x9-Dhl">
-                                <rect key="frame" x="11" y="470" width="156" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Vegetarian">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="pineapple:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="EhC-6A-ZGG"/>
-                                    <action selector="vegetarian:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="Ip1-Kc-7i0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tXY-8q-Op5">
-                                <rect key="frame" x="209" y="470" width="156" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Sugar Free">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="mango:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="1R0-vE-oCl"/>
-                                    <action selector="sugarfree:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="tqa-dd-EBR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hK4-HQ-s7C">
-                                <rect key="frame" x="11" y="566" width="156" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Soy Free">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="blackberry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="Nwp-Pj-gQo"/>
-                                    <action selector="soyfree:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="ZVo-Bi-qSU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EsU-ix-CRG">
-                                <rect key="frame" x="209" y="566" width="156" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Kosher friendly">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="cherry:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="DB4-k7-5tc"/>
-                                    <action selector="kosher:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="lnq-WB-9eX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igx-wG-y9N">
@@ -577,6 +500,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="onNext:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="KsM-Of-be2"/>
                                     <segue destination="zI1-wr-JL2" kind="show" id="xf8-SP-pTE"/>
                                 </connections>
                             </button>
@@ -595,6 +519,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7dh-9y-d41">
+                                <rect key="frame" x="207" y="340" width="156" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Hazel Nut Allergy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hazelnut:" destination="wAk-nc-8Ie" eventType="touchUpInside" id="Mu7-GC-kNk"/>
+                                    <action selector="orange:" destination="hzy-Qm-TWL" eventType="touchUpInside" id="qob-2K-ACM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8866394353" green="0.72536354540000003" blue="0.84035773280000003" alpha="0.77204623289999996" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="8an-Ak-rtr"/>
@@ -602,14 +539,9 @@
                     <connections>
                         <outlet property="gluten" destination="a3r-bE-R2i" id="f15-4y-aNS"/>
                         <outlet property="hazelnut" destination="7dh-9y-d41" id="nYk-Nw-MBa"/>
-                        <outlet property="kosher" destination="EsU-ix-CRG" id="hXr-wu-vzD"/>
                         <outlet property="lactose" destination="sWH-rd-7Dz" id="uDG-av-ft5"/>
                         <outlet property="peanut" destination="urs-Yf-8Xq" id="w91-Ne-ZVo"/>
                         <outlet property="pinenut" destination="6Mv-Nd-snn" id="COh-y0-AOD"/>
-                        <outlet property="soyfree" destination="hK4-HQ-s7C" id="0UL-u8-gEN"/>
-                        <outlet property="sugarfree" destination="tXY-8q-Op5" id="U3t-xA-bF0"/>
-                        <outlet property="vegan" destination="9vA-ht-MO8" id="Qfj-ac-7Bw"/>
-                        <outlet property="vegetarian" destination="9Lc-x9-Dhl" id="fyz-Vi-W2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ej-6E-RnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -767,9 +699,9 @@
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qtD-J2-aWf"/>
-        <segue reference="sm9-ff-Syx"/>
+        <segue reference="R8W-ah-J5K"/>
+        <segue reference="RvZ-mb-f5s"/>
         <segue reference="KFB-v4-0ln"/>
-        <segue reference="xoF-sj-jaf"/>
+        <segue reference="Gnr-k3-DXJ"/>
     </inferredMetricsTieBreakers>
 </document>

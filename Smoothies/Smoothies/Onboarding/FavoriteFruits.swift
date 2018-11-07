@@ -10,11 +10,13 @@ import UIKit
 
 private let fileName = "ingredient_list"
 private let kINGREDIENTSCELLID = "INGREDIENTSCELL"
+var smoothies: [Smoothie] = []
 
 class FavoriteFruits: UIViewController {
     
     var ingredients: [String] = []
     var favoredIngredients: [String] = []
+    
     @IBOutlet weak var IngredientsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -63,11 +65,19 @@ class FavoriteFruits: UIViewController {
             
             let responseString = String(data: data, encoding: .utf8)
             print("responseString = \(String(describing: responseString))")
+            
+            let JSON = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            if let JSON = JSON as? [String: AnyObject] {
+                //if let smoothieName = JSON["title"] as? Any,
+                if let smoothieID = JSON["recipe_id"] {
+                    let smoothieObject: Smoothie = Smoothie.init(smoothieID: smoothieID as? Int ?? 7)
+                    smoothies.append(smoothieObject)
+                }
+            }
         }
         task.resume()
         
     }
-    
     
 }
 
