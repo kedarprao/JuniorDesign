@@ -15,8 +15,10 @@ var smoothies: [Smoothie] = []
 class FavoriteFruits: UIViewController {
     
     var ingredients: [String] = []
-    var favoredIngredients: [String] = []
+    var ingredientsDict: [String : [String: Float]] = [:]
+    var ingredientsVal: [String : Float] = [:]
     
+    //[("Banana",1.0),("Honey",-1.0)]
     @IBOutlet weak var IngredientsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -41,18 +43,24 @@ class FavoriteFruits: UIViewController {
     }
     
     @IBAction func FavoredIngredients(_ sender: UIButton) {
-        for cell in self.IngredientsTableView.visibleCells {
-            let ingredientCell = cell as! IngredientsCell
-            if (ingredientCell.ingredientSlider.value == 1.0) {
-                favoredIngredients.append(ingredientCell.ingredientLabel.text ?? "")
-            }
-        }
+//        let numSections = IngredientsTableView.numberOfSections;
+//        for section in 0 ..< numSections {
+//            let numRows = IngredientsTableView.numberOfRows(inSection: section)
+//            for row in 0 ..< numRows {
+//                let cell = IngredientsTableView.cellForRow(at: IndexPath(row: row, section: section))
+//                let ingredientCell = cell as! IngredientsCell
+//                if let ingredientText = ingredientCell.ingredientLabel.text {
+//                    ingredientsVal[ingredientText] = ingredientCell.ingredientSlider.value
+//                }
+//            }
+//        }
+        //ingredientsDict["ingredients"] = ingredientsVal
         let url = URL(string: "https://enigmatic-shelf-77123.herokuapp.com/ingredients")!
         var request = URLRequest(url: url)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
-        let postString = "ingredients=\(favoredIngredients)"
-        request.httpBody = postString.data(using: .utf8)
+        let postString = "ingredients=\(ingredientsVal))"
+        request.httpBody = postString.data(using: .utf8)!
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {                                                 // check for fundamental networking error
                 print("error=\(String(describing: error))")
@@ -67,14 +75,14 @@ class FavoriteFruits: UIViewController {
             let responseString = String(data: data, encoding: .utf8)
             print("responseString = \(String(describing: responseString))")
             
-            let JSON = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
-            if let JSON = JSON as? [String: AnyObject] {
-                //if let smoothieName = JSON["title"] as? Any,
-                if let smoothieID = JSON["recipe_id"] {
-                    let smoothieObject: Smoothie = Smoothie.init(smoothieID: smoothieID as? Int ?? 7)
-                    smoothies.append(smoothieObject)
-                }
-            }
+//            let JSON = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
+//            if let JSON = JSON as? [String: AnyObject] {
+//                //if let smoothieName = JSON["title"] as? Any,
+//                if let smoothieID = JSON["recipe_id"] {
+//                    let smoothieObject: Smoothie = Smoothie.init(smoothieID: smoothieID as? Int ?? 7)
+//                    smoothies.append(smoothieObject)
+//                }
+//            }
         }
         task.resume()
         
@@ -84,12 +92,14 @@ class FavoriteFruits: UIViewController {
 
 extension FavoriteFruits: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ingredients.count
+        return ingredients.count - 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kINGREDIENTSCELLID) as! IngredientsCell
         cell.ingredientLabel.text = ingredients[indexPath.row]
+        ingredientsVal[ingredients[indexPath.row]] = cell.ingredientSlider.value
+        cell.ingredientsVal = ingredientsVal
         return cell
     }
     

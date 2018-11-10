@@ -13,12 +13,15 @@ class IngredientsCell: UITableViewCell {
     @IBOutlet weak var ingredientLabel: UILabel!
     @IBOutlet weak var ingredientSlider: UISlider!
     
-    let step: Float = 0.5
+    var ingredientsVal: [String: Float] = [:]
+    
+    let step: Float = 1
     @IBAction func ingredientSliderChanged(_ sender: UISlider) {
         let roundedValue = round(sender.value / step) * step
         sender.value = roundedValue
-        print(sender.value)
+        ingredientsVal[self.ingredientLabel.text!] = sender.value
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
