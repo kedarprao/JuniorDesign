@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         } else {
             print("Log in via Google successful")
             guard let idToken = user.authentication.idToken else {return}
-            guard let accessToken = user.authentication.accessToken else {return}
+            guard user.authentication.accessToken != nil else {return}
             guard let name = user.profile.name else {return}
             
             let url = URL(string: "https://enigmatic-shelf-77123.herokuapp.com/signup")!
