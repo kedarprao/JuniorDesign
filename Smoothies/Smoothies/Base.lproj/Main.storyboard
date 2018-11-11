@@ -139,7 +139,7 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-Ug-S0X">
-                                <rect key="frame" x="52" y="390" width="270" height="1"/>
+                                <rect key="frame" x="52.666666666666657" y="369" width="270" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="Jcv-Pb-ME2"/>
@@ -147,7 +147,7 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$/Week" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4f5-jU-j3c">
-                                <rect key="frame" x="52" y="335" width="270" height="50"/>
+                                <rect key="frame" x="52.666666666666657" y="314" width="270" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="IbJ-ed-ucc"/>
@@ -163,7 +163,7 @@
                             <constraint firstItem="6f8-Ug-S0X" firstAttribute="centerX" secondItem="02q-6j-sQz" secondAttribute="centerX" id="1dm-PD-dgH"/>
                             <constraint firstItem="4f5-jU-j3c" firstAttribute="centerX" secondItem="02q-6j-sQz" secondAttribute="centerX" id="3I2-ew-2g2"/>
                             <constraint firstItem="LrJ-su-zW6" firstAttribute="bottom" secondItem="gy7-gB-dW1" secondAttribute="bottom" constant="38" id="3xK-1D-VBE"/>
-                            <constraint firstItem="4f5-jU-j3c" firstAttribute="top" secondItem="LrJ-su-zW6" secondAttribute="top" constant="291" id="42t-az-jSW"/>
+                            <constraint firstItem="4f5-jU-j3c" firstAttribute="top" secondItem="LrJ-su-zW6" secondAttribute="top" constant="270" id="42t-az-jSW"/>
                             <constraint firstItem="LrJ-su-zW6" firstAttribute="trailing" secondItem="gy7-gB-dW1" secondAttribute="trailing" constant="265" id="FMv-0z-PPt"/>
                             <constraint firstItem="pIe-Mv-8qi" firstAttribute="top" secondItem="LrJ-su-zW6" secondAttribute="top" constant="64" id="Giz-6z-4b4"/>
                             <constraint firstItem="a8e-d2-vED" firstAttribute="leading" secondItem="LrJ-su-zW6" secondAttribute="leading" constant="265" id="QtW-6r-Rx7"/>
@@ -267,13 +267,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="zW3-cV-Sek">
-                                <rect key="frame" x="40" y="179" width="168" height="284"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zW3-cV-Sek">
+                                <rect key="frame" x="77.666666666666686" y="256" width="220" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QV6-v0-gOp">
-                                        <rect key="frame" x="0.0" y="0.0" width="168" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="60"/>
                                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="UYJ-ec-2Cj"/>
+                                            <constraint firstAttribute="height" constant="60" id="m8u-U6-2eN"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Gain Weight">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -283,7 +286,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gb-MP-gIo">
-                                        <rect key="frame" x="0.0" y="81" width="168" height="41"/>
+                                        <rect key="frame" x="0.0" y="80" width="220" height="60"/>
                                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Lose Weight">
@@ -294,7 +297,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEl-q8-muo">
-                                        <rect key="frame" x="0.0" y="162" width="168" height="41"/>
+                                        <rect key="frame" x="0.0" y="160" width="220" height="60"/>
                                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Maintain Weight">
@@ -305,7 +308,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ms2-mn-Z1d">
-                                        <rect key="frame" x="0.0" y="243" width="168" height="41"/>
+                                        <rect key="frame" x="0.0" y="240" width="220" height="60"/>
                                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="None">
@@ -317,34 +320,49 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input Weight Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-cx-GSd">
-                                <rect key="frame" x="85" y="101" width="204.66666666666669" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Weight Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCP-cx-GSd">
+                                <rect key="frame" x="85.333333333333329" y="108" width="204.66666666666669" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-mS-wp3" customClass="RoundedButton" customModule="Smoothies" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-mS-wp3" customClass="RoundedButton" customModule="Smoothies" customModuleProvider="target">
                                 <rect key="frame" x="265" y="706" width="90" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hzy-Qm-TWL" kind="show" id="Yhy-pD-crs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-rf-k4w" customClass="RoundedButton" customModule="Smoothies" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-rf-k4w" customClass="RoundedButton" customModule="Smoothies" customModuleProvider="target">
                                 <rect key="frame" x="20" y="706" width="90" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Skip">
+                                <state key="normal" title="Back">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4WR-TF-2Pu" kind="show" id="1iQ-t6-bE3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92934342619999999" green="0.89843101479999998" blue="0.90080101560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kCP-cx-GSd" firstAttribute="top" secondItem="toA-to-bQd" secondAttribute="top" constant="64" id="KAB-Q2-aer"/>
+                            <constraint firstItem="toA-to-bQd" firstAttribute="bottom" secondItem="GaM-rf-k4w" secondAttribute="bottom" constant="38" id="O4Y-Ib-5GY"/>
+                            <constraint firstItem="zW3-cV-Sek" firstAttribute="centerX" secondItem="qIy-ar-6v2" secondAttribute="centerX" id="UGt-EF-HQ5"/>
+                            <constraint firstItem="zW3-cV-Sek" firstAttribute="centerY" secondItem="qIy-ar-6v2" secondAttribute="centerY" id="bRD-rk-v1p"/>
+                            <constraint firstItem="toA-to-bQd" firstAttribute="trailing" secondItem="GaM-rf-k4w" secondAttribute="trailing" constant="265" id="bzz-js-MTr"/>
+                            <constraint firstItem="kCP-cx-GSd" firstAttribute="centerX" secondItem="qIy-ar-6v2" secondAttribute="centerX" id="eNT-ek-Qpw"/>
+                            <constraint firstItem="toA-to-bQd" firstAttribute="trailing" secondItem="Ehi-mS-wp3" secondAttribute="trailing" constant="20" id="fgO-FH-L58"/>
+                            <constraint firstItem="Ehi-mS-wp3" firstAttribute="leading" secondItem="toA-to-bQd" secondAttribute="leading" constant="265" id="uSU-Ve-cG0"/>
+                            <constraint firstItem="toA-to-bQd" firstAttribute="bottom" secondItem="Ehi-mS-wp3" secondAttribute="bottom" constant="38" id="ygh-kp-uKE"/>
+                            <constraint firstItem="GaM-rf-k4w" firstAttribute="leading" secondItem="toA-to-bQd" secondAttribute="leading" constant="20" id="zM0-D5-D5C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="toA-to-bQd"/>
                     </view>
                     <connections>
@@ -714,7 +732,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R8W-ah-J5K"/>
+        <segue reference="Yhy-pD-crs"/>
         <segue reference="xVU-ZS-aEn"/>
-        <segue reference="xoF-sj-jaf"/>
+        <segue reference="1iQ-t6-bE3"/>
     </inferredMetricsTieBreakers>
 </document>
