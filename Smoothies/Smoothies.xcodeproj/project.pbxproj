@@ -15,6 +15,17 @@
 		97BEBC4921778F5D008B225C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BEBC4821778F5D008B225C /* IntroViewController.swift */; };
 		97D6B4062190B7B200B44681 /* Smoothie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B4052190B7B200B44681 /* Smoothie.swift */; };
 		97D6B4082190C40500B44681 /* SmoothieInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B4072190C40500B44681 /* SmoothieInformation.swift */; };
+		97D6B40D2198C72D00B44681 /* SmoothieTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B40B2198C72D00B44681 /* SmoothieTitleCell.swift */; };
+		97D6B40E2198C72D00B44681 /* SmoothieTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D6B40C2198C72D00B44681 /* SmoothieTitleCell.xib */; };
+		97D6B4122198C80500B44681 /* SmoothieRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B4102198C80500B44681 /* SmoothieRatingCell.swift */; };
+		97D6B4132198C80500B44681 /* SmoothieRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D6B4112198C80500B44681 /* SmoothieRatingCell.xib */; };
+		97D6B4182198DC5300B44681 /* SmoothieIngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B4162198DC5300B44681 /* SmoothieIngredientsCell.swift */; };
+		97D6B4192198DC5300B44681 /* SmoothieIngredientsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D6B4172198DC5300B44681 /* SmoothieIngredientsCell.xib */; };
+		97D6B41C2198DC6D00B44681 /* SmoothieDirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B41A2198DC6D00B44681 /* SmoothieDirectionsCell.swift */; };
+		97D6B41D2198DC6D00B44681 /* SmoothieDirectionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D6B41B2198DC6D00B44681 /* SmoothieDirectionsCell.xib */; };
+		97D6B4202198DC7B00B44681 /* SmoothieNutritionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B41E2198DC7B00B44681 /* SmoothieNutritionCell.swift */; };
+		97D6B4212198DC7B00B44681 /* SmoothieNutritionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D6B41F2198DC7B00B44681 /* SmoothieNutritionCell.xib */; };
+		97D6B4232198F31B00B44681 /* SmoothieInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6B4222198F31B00B44681 /* SmoothieInfoVC.swift */; };
 		97DA118E218A1DD30056CB1E /* ingredient_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 97DA118D218A1DD30056CB1E /* ingredient_list.txt */; };
 		97DA1191218A25230056CB1E /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA118F218A25230056CB1E /* IngredientsCell.swift */; };
 		97DA1192218A25230056CB1E /* IngredientsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DA1190218A25230056CB1E /* IngredientsCell.xib */; };
@@ -64,6 +75,17 @@
 		97BEBC4821778F5D008B225C /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		97D6B4052190B7B200B44681 /* Smoothie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Smoothie.swift; path = Smoothies/Smoothie.swift; sourceTree = "<group>"; };
 		97D6B4072190C40500B44681 /* SmoothieInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieInformation.swift; sourceTree = "<group>"; };
+		97D6B40B2198C72D00B44681 /* SmoothieTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieTitleCell.swift; sourceTree = "<group>"; };
+		97D6B40C2198C72D00B44681 /* SmoothieTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmoothieTitleCell.xib; sourceTree = "<group>"; };
+		97D6B4102198C80500B44681 /* SmoothieRatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRatingCell.swift; sourceTree = "<group>"; };
+		97D6B4112198C80500B44681 /* SmoothieRatingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmoothieRatingCell.xib; sourceTree = "<group>"; };
+		97D6B4162198DC5300B44681 /* SmoothieIngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieIngredientsCell.swift; sourceTree = "<group>"; };
+		97D6B4172198DC5300B44681 /* SmoothieIngredientsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmoothieIngredientsCell.xib; sourceTree = "<group>"; };
+		97D6B41A2198DC6D00B44681 /* SmoothieDirectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieDirectionsCell.swift; sourceTree = "<group>"; };
+		97D6B41B2198DC6D00B44681 /* SmoothieDirectionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmoothieDirectionsCell.xib; sourceTree = "<group>"; };
+		97D6B41E2198DC7B00B44681 /* SmoothieNutritionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieNutritionCell.swift; sourceTree = "<group>"; };
+		97D6B41F2198DC7B00B44681 /* SmoothieNutritionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmoothieNutritionCell.xib; sourceTree = "<group>"; };
+		97D6B4222198F31B00B44681 /* SmoothieInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieInfoVC.swift; sourceTree = "<group>"; };
 		97DA118D218A1DD30056CB1E /* ingredient_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ingredient_list.txt; sourceTree = "<group>"; };
 		97DA118F218A25230056CB1E /* IngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
 		97DA1190218A25230056CB1E /* IngredientsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientsCell.xib; sourceTree = "<group>"; };
@@ -146,6 +168,24 @@
 			path = "Home Page";
 			sourceTree = "<group>";
 		};
+		97D6B40F2198C73600B44681 /* Smoothie Information */ = {
+			isa = PBXGroup;
+			children = (
+				97D6B4222198F31B00B44681 /* SmoothieInfoVC.swift */,
+				97D6B40B2198C72D00B44681 /* SmoothieTitleCell.swift */,
+				97D6B40C2198C72D00B44681 /* SmoothieTitleCell.xib */,
+				97D6B4102198C80500B44681 /* SmoothieRatingCell.swift */,
+				97D6B4112198C80500B44681 /* SmoothieRatingCell.xib */,
+				97D6B4162198DC5300B44681 /* SmoothieIngredientsCell.swift */,
+				97D6B4172198DC5300B44681 /* SmoothieIngredientsCell.xib */,
+				97D6B41A2198DC6D00B44681 /* SmoothieDirectionsCell.swift */,
+				97D6B41B2198DC6D00B44681 /* SmoothieDirectionsCell.xib */,
+				97D6B41E2198DC7B00B44681 /* SmoothieNutritionCell.swift */,
+				97D6B41F2198DC7B00B44681 /* SmoothieNutritionCell.xib */,
+			);
+			path = "Smoothie Information";
+			sourceTree = "<group>";
+		};
 		97DF241E2140877F000B319D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +256,7 @@
 		BEA574402081037B00662510 /* Smoothies */ = {
 			isa = PBXGroup;
 			children = (
+				97D6B40F2198C73600B44681 /* Smoothie Information */,
 				BEA574412081037B00662510 /* AppDelegate.swift */,
 				BEA574452081037B00662510 /* Main.storyboard */,
 				97BEBC4821778F5D008B225C /* IntroViewController.swift */,
@@ -366,10 +407,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D6B40E2198C72D00B44681 /* SmoothieTitleCell.xib in Resources */,
+				97D6B4212198DC7B00B44681 /* SmoothieNutritionCell.xib in Resources */,
 				97DA1192218A25230056CB1E /* IngredientsCell.xib in Resources */,
 				973F1AC62152A7CF00825E19 /* SmoothieDayCell.xib in Resources */,
 				BEA5744C2081037D00662510 /* LaunchScreen.storyboard in Resources */,
+				97D6B4132198C80500B44681 /* SmoothieRatingCell.xib in Resources */,
 				BEA574492081037D00662510 /* Images.xcassets in Resources */,
+				97D6B4192198DC5300B44681 /* SmoothieIngredientsCell.xib in Resources */,
+				97D6B41D2198DC6D00B44681 /* SmoothieDirectionsCell.xib in Resources */,
 				BEA574472081037B00662510 /* Main.storyboard in Resources */,
 				97DF2428214092B6000B319D /* DayCell.xib in Resources */,
 				97DE26A4208952C400905863 /* smoothies.jpg in Resources */,
@@ -498,16 +544,22 @@
 				97D6B4062190B7B200B44681 /* Smoothie.swift in Sources */,
 				BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */,
 				97D6B4082190C40500B44681 /* SmoothieInformation.swift in Sources */,
+				97D6B41C2198DC6D00B44681 /* SmoothieDirectionsCell.swift in Sources */,
 				97DE269C20893E0C00905863 /* Scheduler.swift in Sources */,
 				973F1AC52152A7CF00825E19 /* SmoothieDayCell.swift in Sources */,
 				BEA5747A20812B3B00662510 /* Budget.swift in Sources */,
 				97DA1191218A25230056CB1E /* IngredientsCell.swift in Sources */,
 				E0BA3E382142D31C003C9A4E /* RegisterViewController.swift in Sources */,
+				97D6B4182198DC5300B44681 /* SmoothieIngredientsCell.swift in Sources */,
+				97D6B4122198C80500B44681 /* SmoothieRatingCell.swift in Sources */,
 				BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */,
 				973F1AC12152A6AB00825E19 /* HomePageVC.swift in Sources */,
 				BEA574422081037B00662510 /* AppDelegate.swift in Sources */,
+				97D6B40D2198C72D00B44681 /* SmoothieTitleCell.swift in Sources */,
 				97BEBC4921778F5D008B225C /* IntroViewController.swift in Sources */,
+				97D6B4232198F31B00B44681 /* SmoothieInfoVC.swift in Sources */,
 				BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */,
+				97D6B4202198DC7B00B44681 /* SmoothieNutritionCell.swift in Sources */,
 				97DF2427214092B6000B319D /* DayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

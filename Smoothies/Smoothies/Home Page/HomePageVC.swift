@@ -65,8 +65,45 @@ extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kSmoothieDayCellID) as! SmoothieDayCell
         cell.smoothieName.text = "7"
-        cell.setup()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let smoothieCell = tableView.cellForRow(at: indexPath) as! SmoothieDayCell
+        guard let recipe_id: String = smoothieCell.smoothieName.text else {
+            return
+        }
+        let url = URL(string: "https://enigmatic-shelf-77123.herokuapp.com/recipe/\(recipe_id)")!
+        var request = URLRequest(url: url)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(String(describing: error))")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(String(describing: response))")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(String(describing: responseString))")
+            
+            let decoder = JSONDecoder()
+            do {
+                var smoothieInformation = try decoder.decode(SmoothieInformationWrapper.self, from: data)
+                print("==================")
+                print(smoothieInformation)
+            } catch {
+                print("error trying to convert data to JSON")
+                print(error)
+            }
+        }
+        task.resume()
+        
+        self.performSegue(withIdentifier: "SegueToSmoothieInfo", sender: self)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
