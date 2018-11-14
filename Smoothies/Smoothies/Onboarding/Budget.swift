@@ -10,6 +10,8 @@ import UIKit
 
 class Budget: UIViewController {
 
+    @IBOutlet weak var budgetField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

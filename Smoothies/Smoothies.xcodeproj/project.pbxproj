@@ -44,6 +44,7 @@
 		BEA5747E20812ED800662510 /* FavoriteFruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747D20812ED800662510 /* FavoriteFruits.swift */; };
 		BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5747F2081312900662510 /* DietaryRestrictions.swift */; };
 		CEB54223AC5ED21B5905BEF6 /* Pods_Smoothies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841AEF5E7FFDFDE917D19910 /* Pods_Smoothies.framework */; };
+		E06C97EC219785B700518691 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C97EB219785B700518691 /* RoundedButton.swift */; };
 		E0BA3E382142D31C003C9A4E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA3E372142D31C003C9A4E /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		BEA5747D20812ED800662510 /* FavoriteFruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFruits.swift; sourceTree = "<group>"; };
 		BEA5747F2081312900662510 /* DietaryRestrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRestrictions.swift; sourceTree = "<group>"; };
 		D7CD70427A04874823E5DD9E /* Pods-Smoothies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smoothies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smoothies/Pods-Smoothies.release.xcconfig"; sourceTree = "<group>"; };
+		E06C97EB219785B700518691 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E0BA3E372142D31C003C9A4E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ED35C9F84C871CE7A6318BFC /* Pods_SmoothiesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothiesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -195,6 +197,7 @@
 				BEA5747D20812ED800662510 /* FavoriteFruits.swift */,
 				97DA118F218A25230056CB1E /* IngredientsCell.swift */,
 				97DA1190218A25230056CB1E /* IngredientsCell.xib */,
+				E06C97EB219785B700518691 /* RoundedButton.swift */,
 				97DF2429214092E5000B319D /* Scheduler */,
 				BEA5747B20812D8000662510 /* WeightGoals.swift */,
 			);
@@ -542,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D6B4062190B7B200B44681 /* Smoothie.swift in Sources */,
+				E06C97EC219785B700518691 /* RoundedButton.swift in Sources */,
 				BEA5747C20812D8000662510 /* WeightGoals.swift in Sources */,
 				97D6B4082190C40500B44681 /* SmoothieInformation.swift in Sources */,
 				97D6B41C2198DC6D00B44681 /* SmoothieDirectionsCell.swift in Sources */,
@@ -735,7 +739,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7SKJ7LN625;
+				DEVELOPMENT_TEAM = T55YS9V7E6;
 				INFOPLIST_FILE = Smoothies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -754,7 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7SKJ7LN625;
+				DEVELOPMENT_TEAM = T55YS9V7E6;
 				INFOPLIST_FILE = Smoothies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
