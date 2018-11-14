@@ -9,12 +9,16 @@
 import Foundation
 
 
-struct Smoothie {
-    //var smoothieName: String
-    var smoothieID: Int
+struct Smoothie: Codable {
+    var title: String
+    var recipe_id: Int
 
-    init (smoothieID: Int) { //(smoothieName: String, smoothieID: Int) {
-        //self.smoothieName = smoothieName
-        self.smoothieID = smoothieID
-    }
+//    init (recipe_id: Int, smoothieName: String, smoothieID: Int) {
+//        //self.smoothieName = smoothieName
+//        self.recipe_id = recipe_id
+//    }
+}
+
+struct SmoothieWrapper: Codable {
+    var recipes: [Smoothie]
 }

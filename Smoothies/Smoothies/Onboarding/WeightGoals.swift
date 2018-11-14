@@ -10,7 +10,7 @@ import UIKit
 
 class WeightGoals: UIViewController {
     
-    var weightGoals: String = ""
+    var favoriteFruits: FavoriteFruits = FavoriteFruits()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class WeightGoals: UIViewController {
             lose.isEnabled = false
             maintain.isEnabled = false
             none.isEnabled = false
-            weightGoals = "Gain Weight"
+            favoriteFruits.weightGoals = "Gain Weight"
         }
     }
     
@@ -59,7 +59,7 @@ class WeightGoals: UIViewController {
             gain.isEnabled = false
             maintain.isEnabled = false
             none.isEnabled = false
-            weightGoals = "Lose Weight"
+            favoriteFruits.weightGoals = "Lose Weight"
         }
     }
 
@@ -75,7 +75,7 @@ class WeightGoals: UIViewController {
             lose.isEnabled = false
             gain.isEnabled = false
             none.isEnabled = false
-            weightGoals = "Maintain Weight"
+            favoriteFruits.weightGoals = "Maintain Weight"
         }
     }
     
@@ -91,7 +91,7 @@ class WeightGoals: UIViewController {
             lose.isEnabled = false
             maintain.isEnabled = false
             gain.isEnabled = false
-            weightGoals = "None"
+            favoriteFruits.weightGoals = "None"
         }
     }
     

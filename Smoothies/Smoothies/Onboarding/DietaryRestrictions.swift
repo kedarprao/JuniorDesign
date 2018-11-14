@@ -10,7 +10,7 @@ import UIKit
 
 class DietaryRestrictions: UIViewController {
 
-    var restrictions: [String] = []
+    var favoriteFruits: FavoriteFruits?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,45 +37,50 @@ class DietaryRestrictions: UIViewController {
     @IBAction func lactose(_ sender: Any) {
         if (lactose.backgroundColor == UIColor.darkGray) {
             lactose.backgroundColor = UIColor.lightGray
+            favoriteFruits?.dietaryRestrictions.removeAll(where: {$0 == "Lactose Intolerant" })
         } else {
             lactose.backgroundColor = UIColor.darkGray
-            restrictions.append("Lactose Intolerant")
+            favoriteFruits?.dietaryRestrictions.append("Lactose Intolerant")
         }
     }
     
     @IBAction func pinenut(_ sender: Any) {
         if (pinenut.backgroundColor == UIColor.darkGray) {
             pinenut.backgroundColor = UIColor.lightGray
+            favoriteFruits?.dietaryRestrictions.removeAll(where: {$0 == "Pine Nut" })
         } else {
             pinenut.backgroundColor = UIColor.darkGray
-            restrictions.append("Pine Nut")
+            favoriteFruits?.dietaryRestrictions.append("Pine Nut")
         }
     }
     
     @IBAction func gluten(_ sender: Any) {
         if (gluten.backgroundColor == UIColor.darkGray) {
             gluten.backgroundColor = UIColor.lightGray
+        favoriteFruits?.dietaryRestrictions.removeAll(where: {$0 == "Gluten Free" })
         } else {
             gluten.backgroundColor = UIColor.darkGray
-            restrictions.append("Gluten Free")
+            favoriteFruits?.dietaryRestrictions.append("Gluten Free")
         }
     }
     
     @IBAction func hazelnut(_ sender: Any) {
         if (hazelnut.backgroundColor == UIColor.darkGray) {
             hazelnut.backgroundColor = UIColor.lightGray
+            favoriteFruits?.dietaryRestrictions.removeAll(where: {$0 == "Hazel Nut" })
         } else {
             hazelnut.backgroundColor = UIColor.darkGray
-            restrictions.append("Hazel Nut")
+            favoriteFruits?.dietaryRestrictions.append("Hazel Nut")
         }
     }
     
     @IBAction func peanut(_ sender: Any) {
         if (peanut.backgroundColor == UIColor.darkGray) {
             peanut.backgroundColor = UIColor.lightGray
+            favoriteFruits?.dietaryRestrictions.removeAll(where: {$0 == "Peanut" })
         } else {
             peanut.backgroundColor = UIColor.darkGray
-            restrictions.append("Peanut")
+            favoriteFruits?.dietaryRestrictions.append("Peanut")
         }
     }
 

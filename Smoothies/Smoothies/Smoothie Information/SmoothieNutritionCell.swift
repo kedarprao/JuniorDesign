@@ -1,14 +1,14 @@
 //
-//  SmoothieDayCell.swift
+//  SmoothieNutritionCell.swift
 //  Smoothies
 //
-//  Created by Kedar Rao on 9/19/18.
+//  Created by Kedar Rao on 11/11/18.
 //  Copyright © 2018 Francis Wethington. All rights reserved.
 //
 
 import UIKit
 
-class SmoothieDayCell: UITableViewCell {
+class SmoothieNutritionCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +20,5 @@ class SmoothieDayCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBOutlet weak var smoothieName: UILabel!
     
 }
