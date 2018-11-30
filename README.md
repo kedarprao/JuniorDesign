@@ -7,7 +7,7 @@
 * Set your ingredient preferences based on a scale of -1 to 1 (-1 being absolutely don't want; 1 being definitely want)
 * Select smoothies based on those preferences, as well as showing the total cost to purchase the ingredients to make those smoothies for the week
 * Select schedules for those days based on selected smoothies
-* See all the information for those smoothies - rating, ingredients, and instructions
+* See all the information for those smoothies - rating, ingredients, and recipe directions
 * Each recipe will display their ingredients and nutritional information
 * See a shopping list for those smoothies for the week
 * Edit a smoothie recommendation and get an updated cost for the week with new shopping list  
