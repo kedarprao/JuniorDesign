@@ -34,12 +34,11 @@ extension GroceryListVC: UITableViewDelegate, UITableViewDataSource {
         if let groceryListKeys = groceryList?.cost.keys {
             for key in groceryListKeys {
                 if let amount = groceryList?.cost[key] {
-                    groceryArr.append("\(key) - \(amount) oz")
+                    groceryArr.append("\(key) - \(String(format: "%.2f", amount)) oz")
 
                 }
             }
         }
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: kGROCERYLISTCELLID) as! GroceryListCell
         cell.groceryListLabel.text = groceryArr[indexPath.row]
         return cell

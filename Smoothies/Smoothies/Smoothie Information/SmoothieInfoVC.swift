@@ -71,6 +71,9 @@ extension SmoothieInfoVC: UITableViewDelegate {
         
         if (indexPath.section == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: kSMOOTHIETITLECELLID) as! SmoothieTitleCell
+            if let imageURL = smoothieInformation?.image {
+                cell.imageURL = imageURL
+            }
             return cell
         } else if (indexPath.section == 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: kSMOOTHIERATINGCELLID) as! SmoothieRatingCell
