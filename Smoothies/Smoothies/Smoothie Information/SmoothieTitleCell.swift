@@ -10,6 +10,16 @@ import UIKit
 
 class SmoothieTitleCell: UITableViewCell {
 
+    @IBOutlet weak var smoothieImage: UIImageView!
+    var imageURL: String? {
+        didSet {
+            if let url = URL(string: imageURL ?? "") {
+                let data = try? Data(contentsOf: url)
+                smoothieImage.image = UIImage(data: data!)
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

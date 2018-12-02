@@ -22,5 +22,5 @@ class SmoothieDayCell: UITableViewCell {
     }
     
     @IBOutlet weak var smoothieName: UILabel!
-    
+    var smoothieID: Int = -1
 }

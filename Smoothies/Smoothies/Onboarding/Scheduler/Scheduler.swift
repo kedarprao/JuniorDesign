@@ -13,11 +13,14 @@ private let kDAYCELLID = "DAYCELL"
 class Scheduler: UIViewController {
     
     let days: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    static var numSmoothiesDict: [String: Int] = [:]
     
+    @IBOutlet weak var smoothiesRemainingLabel: UILabel!
     @IBOutlet weak var schedulerTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        smoothiesRemainingLabel.text = "Select for a total of \(selectedSmoothies.count) Smoothies"
         setupUI()
     }
     
@@ -30,6 +33,13 @@ class Scheduler: UIViewController {
             forCellReuseIdentifier: kDAYCELLID
         )
     }
+    
+    @IBAction func onNext(_ sender: UIButton) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+            self.performSegue(withIdentifier: "SegueToHomeVC", sender: self)
+        })
+    }
+    
 }
 
 extension Scheduler: UITableViewDataSource {
