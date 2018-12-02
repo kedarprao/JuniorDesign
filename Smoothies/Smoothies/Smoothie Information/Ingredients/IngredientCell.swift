@@ -1,24 +1,21 @@
 //
-//  SmoothieNutritionCell.swift
+//  IngredientCell.swift
 //  Smoothies
 //
-//  Created by Kedar Rao on 11/11/18.
+//  Created by Kedar Rao on 12/1/18.
 //  Copyright © 2018 Francis Wethington. All rights reserved.
 //
 
 import UIKit
 
-class SmoothieNutritionCell: UITableViewCell {
+class IngredientCell: UITableViewCell {
 
-    @IBOutlet weak var servingsLabel: UILabel!
-    @IBOutlet weak var caloriesLabel: UILabel!
-    @IBOutlet weak var fatLabel: UILabel!
-    @IBOutlet weak var carbsLabel: UILabel!
-    @IBOutlet weak var proteinLabel: UILabel!
+    @IBOutlet weak var ingredientLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        ingredientLabel.text = "YOOOO"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

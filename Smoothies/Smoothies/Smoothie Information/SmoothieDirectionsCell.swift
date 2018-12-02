@@ -9,7 +9,8 @@
 import UIKit
 
 class SmoothieDirectionsCell: UITableViewCell {
-
+    @IBOutlet weak var directionsLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

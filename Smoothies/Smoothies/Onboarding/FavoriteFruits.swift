@@ -10,16 +10,16 @@ import UIKit
 
 private let fileName = "ingredient_list"
 private let kINGREDIENTSCELLID = "INGREDIENTSCELL"
-var smoothies: [Smoothie] = []
+var allSmoothies: [Smoothie] = []
 
 class FavoriteFruits: UIViewController, UITableViewDataSource {
-    
-    var budget: String?
-    var dietaryRestrictions: [String] = ["Peanut"]
-    var weightGoals: String = "None"
+
+    static var dietaryRestrictions: [String] = []
+    static var weightGoals: String = "None"
     
     var ingredients: [String] = []
     var ingredientsVal: [String: Float] = [:]
+    
     @IBOutlet weak var IngredientsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -42,10 +42,9 @@ class FavoriteFruits: UIViewController, UITableViewDataSource {
         IngredientsTableView.register(UINib.init(nibName: "IngredientsCell", bundle: Bundle.main), forCellReuseIdentifier: kINGREDIENTSCELLID)
     }
     
-    @IBAction func FavoredIngredients(_ sender: UIButton) {
-        guard let goals: String = weightGoals, let restrictions: [String] = dietaryRestrictions else {
-            return
-        }
+    @IBAction func onNext(_ sender: UIButton) {
+        let goals: String = FavoriteFruits.weightGoals
+        let restrictions: [String] = FavoriteFruits.dietaryRestrictions
         let url = URL(string: "https://enigmatic-shelf-77123.herokuapp.com/ingredients")!
         var request = URLRequest(url: url)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
@@ -68,15 +67,18 @@ class FavoriteFruits: UIViewController, UITableViewDataSource {
             
             let decoder = JSONDecoder()
             do {
-                var smoothies = try decoder.decode(SmoothieWrapper.self, from: data)
+                let smoothieWrapper = try decoder.decode(SmoothieWrapper.self, from: data)
+                allSmoothies = smoothieWrapper.recipes
             } catch {
                 print("error trying to convert data to JSON")
                 print(error)
             }
         }
         task.resume()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+            self.performSegue(withIdentifier: "SegueToSelectSmoothies", sender: self)
+        })
     }
-    
 }
 
 extension FavoriteFruits {

@@ -8,8 +8,13 @@
 
 import UIKit
 
+private let kINGREDIENTCELLID = "INGREDIENTCELLID"
+
 class SmoothieIngredientsCell: UITableViewCell {
 
+    
+    @IBOutlet weak var ingredientLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

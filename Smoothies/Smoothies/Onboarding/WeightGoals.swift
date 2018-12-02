@@ -43,7 +43,7 @@ class WeightGoals: UIViewController {
             lose.isEnabled = false
             maintain.isEnabled = false
             none.isEnabled = false
-            favoriteFruits.weightGoals = "Gain Weight"
+            FavoriteFruits.weightGoals = "Gain Weight"
         }
     }
     
@@ -59,7 +59,7 @@ class WeightGoals: UIViewController {
             gain.isEnabled = false
             maintain.isEnabled = false
             none.isEnabled = false
-            favoriteFruits.weightGoals = "Lose Weight"
+            FavoriteFruits.weightGoals = "Lose Weight"
         }
     }
 
@@ -75,7 +75,7 @@ class WeightGoals: UIViewController {
             lose.isEnabled = false
             gain.isEnabled = false
             none.isEnabled = false
-            favoriteFruits.weightGoals = "Maintain Weight"
+            FavoriteFruits.weightGoals = "Maintain Weight"
         }
     }
     
@@ -91,7 +91,7 @@ class WeightGoals: UIViewController {
             lose.isEnabled = false
             maintain.isEnabled = false
             gain.isEnabled = false
-            favoriteFruits.weightGoals = "None"
+            FavoriteFruits.weightGoals = "None"
         }
     }
     

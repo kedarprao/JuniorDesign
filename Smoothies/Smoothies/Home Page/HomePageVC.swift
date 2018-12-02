@@ -9,14 +9,14 @@
 import UIKit
 ;
 private let kSmoothieDayCellID = "SMOOTHIEDAYCELL"
-var numSmoothiesArr: [Int] = [0, 0, 0, 0, 0, 0, 0]
-
 class HomePageVC: UIViewController {
     
     let days: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-    var dayCell: DayCell?;    
+    var dayCell: DayCell?
+    var localSelectedSmoothies = selectedSmoothies
     
-    var smoothie = smoothies
+    
+    static var smoothieInformation: SmoothieInformaton?
     
     @IBOutlet weak var HomePageTableView: UITableView!
     
@@ -25,6 +25,10 @@ class HomePageVC: UIViewController {
         setupUI()
         // Do any additional setup after loading the view.
         //dayCell?.numSmoothiesArr[0]// num smoothies on monday
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        localSelectedSmoothies = selectedSmoothies
     }
     
     func setupUI() {
@@ -40,37 +44,36 @@ class HomePageVC: UIViewController {
 
 extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        /* get data from Scheduler.swift for how many smoothies a day and put it in here for each section.
-        if section == 0 (Monday) {
-        return num
-         */
         if section == 0 {
-            return numSmoothiesArr[0]
+            return Scheduler.numSmoothiesDict["Monday"] ?? 0
         } else if section == 1{
-            return numSmoothiesArr[1]
+            return Scheduler.numSmoothiesDict["Tuesday"] ?? 0
         } else if section == 2{
-            return numSmoothiesArr[2]
+            return Scheduler.numSmoothiesDict["Wednesday"] ?? 0
         } else if section == 3{
-            return numSmoothiesArr[3]
+            return Scheduler.numSmoothiesDict["Thursday"] ?? 0
         } else if section == 4{
-            return numSmoothiesArr[4]
+            return Scheduler.numSmoothiesDict["Friday"] ?? 0
         } else if section == 5{
-            return numSmoothiesArr[5]
+            return Scheduler.numSmoothiesDict["Saturday"] ?? 0
         } else if section == 6 {
-            return numSmoothiesArr[6]
+            return Scheduler.numSmoothiesDict["Sunday"] ?? 0
         }
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kSmoothieDayCellID) as! SmoothieDayCell
-        cell.smoothieName.text = "7"
+        let smoothie = localSelectedSmoothies[0]
+        localSelectedSmoothies.remove(at: 0)
+        cell.smoothieName.text = smoothie.title
+        cell.smoothieID = smoothie.recipe_id
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let smoothieCell = tableView.cellForRow(at: indexPath) as! SmoothieDayCell
-        guard let recipe_id: String = smoothieCell.smoothieName.text else {
+        guard let recipe_id: Int = smoothieCell.smoothieID else {
             return
         }
         let url = URL(string: "https://enigmatic-shelf-77123.herokuapp.com/recipe/\(recipe_id)")!
@@ -93,17 +96,18 @@ extension HomePageVC: UITableViewDelegate, UITableViewDataSource {
             
             let decoder = JSONDecoder()
             do {
-                var smoothieInformation = try decoder.decode(SmoothieInformationWrapper.self, from: data)
-                print("==================")
-                print(smoothieInformation)
+                let smoothieInformationWrapper = try decoder.decode(SmoothieInformationWrapper.self, from: data)
+                HomePageVC.smoothieInformation = smoothieInformationWrapper.recipe
             } catch {
                 print("error trying to convert data to JSON")
                 print(error)
             }
         }
         task.resume()
-        
-        self.performSegue(withIdentifier: "SegueToSmoothieInfo", sender: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+            self.performSegue(withIdentifier: "SegueToSmoothieInfo", sender: self)
+        })
+
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -10,6 +10,7 @@ import UIKit
 
 class SmoothieRatingCell: UITableViewCell {
 
+    @IBOutlet weak var smoothieRatingLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
