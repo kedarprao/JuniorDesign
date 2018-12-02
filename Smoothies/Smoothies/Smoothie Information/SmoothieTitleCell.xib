@@ -19,11 +19,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="175.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akt-QK-uQH">
-                        <rect key="frame" x="40" y="23" width="240" height="142"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="akt-QK-uQH">
+                        <rect key="frame" x="40" y="10.5" width="240" height="154.5"/>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="akt-QK-uQH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="24" id="MNE-xQ-qD1"/>
+                    <constraint firstItem="akt-QK-uQH" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ezH-Qh-oWJ"/>
+                    <constraint firstItem="akt-QK-uQH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hUC-EH-3HI"/>
+                    <constraint firstItem="akt-QK-uQH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="kgM-Dc-cZY"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

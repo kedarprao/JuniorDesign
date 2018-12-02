@@ -10,7 +10,7 @@ import UIKit
 
 var groceryList: GroceryList?
 
-class SelectSmoothieCell: UITableViewCell {
+class SelectSmoothieCell: UITableViewCell, UITextFieldDelegate {
 
     var AllSmoothiesTableView: UITableView?
     var selectSmoothieVC: SelectSmoothieVC?
@@ -76,8 +76,15 @@ class SelectSmoothieCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.numberOfSmoothies.delegate = self
+        self.numberOfSmoothies.returnKeyType = .done
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
