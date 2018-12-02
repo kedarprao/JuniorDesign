@@ -191,6 +191,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QV6-v0-gOp">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="84.666666666666671"/>
                                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="UYJ-ec-2Cj"/>
+                                            <constraint firstAttribute="height" constant="60" id="m8u-U6-2eN"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Gain Weight">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -242,7 +246,7 @@
                                     <constraint firstAttribute="height" constant="53" id="sVM-ze-1Kp"/>
                                 </constraints>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="wAk-nc-8Ie" kind="show" id="IVw-KS-shz"/>
@@ -255,7 +259,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.8866394353" green="0.72536354540000003" blue="0.84035773280000003" alpha="0.77204623289999996" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.92934342619999999" green="0.89843101479999998" blue="0.90080101560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vl8-f7-dQc" firstAttribute="top" secondItem="zW3-cV-Sek" secondAttribute="bottom" constant="91" id="94S-8A-arO"/>
                             <constraint firstItem="Vl8-f7-dQc" firstAttribute="trailing" secondItem="qIy-ar-6v2" secondAttribute="trailingMargin" id="E4h-jg-snC"/>
@@ -560,7 +564,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.70588235294117652" green="0.55294117647058827" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92934342619999999" green="0.89843101479999998" blue="0.90080101560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2U2-PA-7m5" firstAttribute="trailing" secondItem="Acw-gy-pv3" secondAttribute="trailing" constant="16" id="41x-no-vim"/>
                             <constraint firstItem="OcS-Ne-stC" firstAttribute="top" secondItem="MOq-jc-Zco" secondAttribute="bottom" constant="45" id="6OH-03-n1e"/>
@@ -738,7 +742,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZU-kf-jNf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.70196078429999997" green="0.5568627451" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92934342619999999" green="0.89843101479999998" blue="0.90080101560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
