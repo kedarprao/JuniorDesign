@@ -8,18 +8,11 @@
 
 import UIKit
 
-class DayCell: UITableViewCell {
-    
-    @IBOutlet weak var dayCellLabel: UILabel!
-    
-    @IBOutlet weak var smoothieSwitch: UISwitch!
-    
+class DayCell: UITableViewCell, UITextFieldDelegate {
+        
     @IBOutlet weak var numSmoothiesPerDay: UITextField!
-    var scheduler: Scheduler?
+    
     var schedulerTableView: UITableView?
-    func update() {
-        smoothieSwitch.isOn = false
-    }
     
     @IBAction func textfieldChange(_ sender: UITextField) {
         let num: Int? = Int(sender.text!)
@@ -42,5 +35,17 @@ class DayCell: UITableViewCell {
                 }
             }
         }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        self.numSmoothiesPerDay.delegate = self
+        self.numSmoothiesPerDay.returnKeyType = .done
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

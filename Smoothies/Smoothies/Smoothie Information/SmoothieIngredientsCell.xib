@@ -19,14 +19,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="93.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyN-uy-N07">
-                        <rect key="frame" x="16" y="27" width="288" height="43"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyN-uy-N07">
+                        <rect key="frame" x="16" y="25.5" width="288" height="43"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="lyN-uy-N07" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3Pj-nO-FHh"/>
+                    <constraint firstItem="lyN-uy-N07" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JpT-WS-XvE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lyN-uy-N07" secondAttribute="bottom" constant="14.5" id="jwo-b8-K9e"/>
+                    <constraint firstItem="lyN-uy-N07" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14.5" id="pEk-U9-hVc"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
