@@ -35,7 +35,7 @@ class Scheduler: UIViewController {
     }
     
     @IBAction func onNext(_ sender: UIButton) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
             self.performSegue(withIdentifier: "SegueToHomeVC", sender: self)
         })
     }
@@ -55,7 +55,6 @@ extension Scheduler: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kDAYCELLID) as! DayCell
         cell.schedulerTableView = schedulerTableView
-        cell.update()
         return cell
     }
     
@@ -75,7 +74,7 @@ extension Scheduler: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 75.0
     }
 
 }

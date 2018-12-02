@@ -20,9 +20,11 @@ class SelectSmoothieVC: UIViewController {
     static var recipeIDs: [String: Int] = [:]
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         setupUI()
     }
+    
+    
     
     func setupUI() {
         AllSmoothiesTableView.delegate = self
@@ -44,6 +46,10 @@ extension SelectSmoothieVC: UITableViewDataSource {
         cell.selectSmoothieVC = self
         cell.smoothie = allSmoothies[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50.0
     }
     
 }
