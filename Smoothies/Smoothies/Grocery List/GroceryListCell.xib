@@ -19,29 +19,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-wY-MS4">
-                        <rect key="frame" x="16" y="10.5" width="203" height="22.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-wY-MS4">
+                        <rect key="frame" x="16" y="11" width="203" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-XK-jIB">
-                        <rect key="frame" x="245" y="7" width="51" height="29.5"/>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-XK-jIB">
+                        <rect key="frame" x="245" y="6" width="49" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </switch>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="JJg-XK-jIB" firstAttribute="leading" secondItem="Egf-wY-MS4" secondAttribute="trailing" constant="26" id="FaA-R4-cS1"/>
-                    <constraint firstItem="Egf-wY-MS4" firstAttribute="centerY" secondItem="JJg-XK-jIB" secondAttribute="centerY" id="Lnn-uD-leM"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="JJg-XK-jIB" secondAttribute="trailing" constant="10" id="WHk-kk-yvg"/>
-                    <constraint firstItem="JJg-XK-jIB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="Wwa-pu-xje"/>
-                    <constraint firstItem="JJg-XK-jIB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XnA-C5-yUJ"/>
-                    <constraint firstItem="JJg-XK-jIB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YdX-ic-xcD"/>
-                    <constraint firstItem="JJg-XK-jIB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="gMF-Xc-n7w"/>
-                    <constraint firstItem="JJg-XK-jIB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hKR-BE-GiV"/>
-                    <constraint firstItem="Egf-wY-MS4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vZ2-YU-Yeu"/>
-                    <constraint firstItem="Egf-wY-MS4" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="wGA-rc-AUb"/>
-                    <constraint firstAttribute="bottom" secondItem="JJg-XK-jIB" secondAttribute="bottom" constant="7" id="wjA-9e-3cC"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

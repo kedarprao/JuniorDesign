@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4E551A686A78BB578500A426 /* Pods_SmoothiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC84D419E5A5DA97B0E9996 /* Pods_SmoothiesTests.framework */; };
 		67008C5E33FA717B9191FEC1 /* Pods_SmoothiesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED35C9F84C871CE7A6318BFC /* Pods_SmoothiesUITests.framework */; };
-		97058C6221B47DCC00321E02 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97058C6121B47DCC00321E02 /* DayCell.swift */; };
 		9708589621B38BA9003E23E7 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708589521B38BA9003E23E7 /* GroceryList.swift */; };
 		970858A121B3A731003E23E7 /* GroceryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970858A021B3A731003E23E7 /* GroceryListVC.swift */; };
 		970858A421B3A7FE003E23E7 /* GroceryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970858A221B3A7FE003E23E7 /* GroceryListCell.swift */; };
@@ -39,6 +38,7 @@
 		97DA1192218A25230056CB1E /* IngredientsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DA1190218A25230056CB1E /* IngredientsCell.xib */; };
 		97DE269C20893E0C00905863 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE269B20893E0C00905863 /* Scheduler.swift */; };
 		97DE26A4208952C400905863 /* smoothies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97DE26A3208952C300905863 /* smoothies.jpg */; };
+		97DF2427214092B6000B319D /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF2425214092B6000B319D /* DayCell.swift */; };
 		97DF2428214092B6000B319D /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DF2426214092B6000B319D /* DayCell.xib */; };
 		BEA574422081037B00662510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA574412081037B00662510 /* AppDelegate.swift */; };
 		BEA574472081037B00662510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA574452081037B00662510 /* Main.storyboard */; };
@@ -76,7 +76,6 @@
 		33E9EAA23CEAC765F56126A3 /* Pods-Smoothies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smoothies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smoothies/Pods-Smoothies.debug.xcconfig"; sourceTree = "<group>"; };
 		4A3F178E757484EB223A4C7C /* Pods-SmoothiesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothiesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothiesUITests/Pods-SmoothiesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		841AEF5E7FFDFDE917D19910 /* Pods_Smoothies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smoothies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97058C6121B47DCC00321E02 /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 		9708589521B38BA9003E23E7 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroceryList.swift; path = Smoothies/GroceryList.swift; sourceTree = "<group>"; };
 		970858A021B3A731003E23E7 /* GroceryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroceryListVC.swift; path = /Users/kedar/Gatech/JuniorDesign/Smoothies/Smoothies/GroceryListVC.swift; sourceTree = "<absolute>"; };
 		970858A221B3A7FE003E23E7 /* GroceryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListCell.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		97DA1190218A25230056CB1E /* IngredientsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientsCell.xib; sourceTree = "<group>"; };
 		97DE269B20893E0C00905863 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		97DE26A3208952C300905863 /* smoothies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smoothies.jpg; sourceTree = "<group>"; };
+		97DF2425214092B6000B319D /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 		97DF2426214092B6000B319D /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		993DA743A9F3BDC17E94B9CD /* Pods-SmoothiesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothiesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothiesUITests/Pods-SmoothiesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACC84D419E5A5DA97B0E9996 /* Pods_SmoothiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				97DE269B20893E0C00905863 /* Scheduler.swift */,
-				97058C6121B47DCC00321E02 /* DayCell.swift */,
+				97DF2425214092B6000B319D /* DayCell.swift */,
 				97DF2426214092B6000B319D /* DayCell.xib */,
 			);
 			path = Scheduler;
@@ -594,7 +594,7 @@
 				97D6B4232198F31B00B44681 /* SmoothieInfoVC.swift in Sources */,
 				BEA574802081312900662510 /* DietaryRestrictions.swift in Sources */,
 				97D6B4202198DC7B00B44681 /* SmoothieNutritionCell.swift in Sources */,
-				97058C6221B47DCC00321E02 /* DayCell.swift in Sources */,
+				97DF2427214092B6000B319D /* DayCell.swift in Sources */,
 				970858A421B3A7FE003E23E7 /* GroceryListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

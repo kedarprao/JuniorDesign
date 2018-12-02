@@ -59,7 +59,7 @@ extension SmoothieInfoVC: UITableViewDelegate {
             return ingredientsArr.count
             // return number of ingredients
         } else if (section == 3) {
-            return directionsArr.count - 1 //return nuber of directions
+            return directionsArr.count //return nuber of directions
         } else {
             return 1
             //servingSize, calories, fat, carbs, protein
@@ -123,13 +123,13 @@ extension SmoothieInfoVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let section = indexPath.section
         if (section == 0) {
-            return 250
+            return 300
         } else if (section == 1) {
             return 50
         } else if (section == 2) {
             return 75
         } else if (section == 3) {
-            return 100
+            return 75
         } else {
             return 150
         }
