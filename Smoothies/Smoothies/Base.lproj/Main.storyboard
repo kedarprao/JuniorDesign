@@ -96,6 +96,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="TgH-9P-HOd" id="csT-LW-GXc"/>
+                        <outlet property="passwordTextField" destination="gPM-eN-XUg" id="4O7-1P-Huf"/>
                         <segue destination="SdV-mA-uYK" kind="show" identifier="SegueToWeightGoals" id="O9o-Is-RGq"/>
                     </connections>
                 </viewController>
@@ -172,6 +174,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fPt-zq-cUd"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="yRf-FO-ooq" id="TdP-QO-Elw"/>
+                        <outlet property="passwordTextField" destination="aJI-TV-aml" id="2Zd-jC-UN0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ll-yt-KoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -879,11 +885,10 @@
         <image name="settings" width="2.8346457481384277" height="2.8346457481384277"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="STO-tR-RLP"/>
         <segue reference="rWy-AE-vTb"/>
         <segue reference="rmS-sy-C57"/>
         <segue reference="bgN-FE-Nfh"/>
         <segue reference="sST-hf-cdK"/>
-        <segue reference="MXa-w9-eKt"/>
+        <segue reference="1f0-QE-sqY"/>
     </inferredMetricsTieBreakers>
 </document>

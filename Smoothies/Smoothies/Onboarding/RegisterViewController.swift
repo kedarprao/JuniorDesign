@@ -8,12 +8,33 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.emailTextField.delegate = self
+        self.emailTextField.returnKeyType = .done
+        
+        self.passwordTextField.delegate = self
+        self.passwordTextField.returnKeyType = .done
+
+        self.confirmPasswordTextField.delegate = self
+        self.confirmPasswordTextField.returnKeyType = .done
+
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {

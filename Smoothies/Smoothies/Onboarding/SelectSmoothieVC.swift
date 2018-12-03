@@ -24,13 +24,19 @@ class SelectSmoothieVC: UIViewController {
         setupUI()
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        setupUI()
+    }
     
     func setupUI() {
         AllSmoothiesTableView.delegate = self
         AllSmoothiesTableView.dataSource = self
         AllSmoothiesTableView.register(UINib.init(nibName: "SelectSmoothieCell", bundle: Bundle.main), forCellReuseIdentifier: kSMOOTHIESLECTIONCELLID)
         totalBudgetLabel.text = "Total Cost For The Week: $0.00"
+        for i in 0...allSmoothies.count-1 {
+            let cell = tableView(AllSmoothiesTableView, cellForRowAt: IndexPath(row: i, section: 0)) as! SelectSmoothieCell
+            cell.numberOfSmoothies.text = "0"
+        }
     }
     
 }
