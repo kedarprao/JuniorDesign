@@ -9,14 +9,27 @@
 import UIKit
 import GoogleSignIn
 
-class IntroViewController: UIViewController, GIDSignInUIDelegate {
+class IntroViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDelegate {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         GIDSignIn.sharedInstance().uiDelegate = self
+        
+        self.emailTextField.delegate = self
+        self.emailTextField.returnKeyType = .done
+        
+        self.passwordTextField.delegate = self
+        self.passwordTextField.returnKeyType = .done
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {
